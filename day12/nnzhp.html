@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta property="wb:webmaster" content="d86dfc09db67b1b4" />
+		<meta property="qc:admins" content="5340606616130176375" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>牛牛杂货铺 - 说说测试&amp;生活中的那些事</title>							
+															<link rel="icon" href="http://www.nnzhp.cn:80/wp-content/themes/QQ/images/logo.jpg">
+				<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='crayon-css'  href='http://www.nnzhp.cn:80/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-sublime-text-css'  href='http://www.nnzhp.cn:80/wp-content/plugins/crayon-syntax-highlighter/themes/sublime-text/sublime-text.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css'  href='http://www.nnzhp.cn:80/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='mt-shcore-style-css'  href='http://www.nnzhp.cn:80/wp-content/plugins/syntax-highlighter-mt/styles/shCore.css?ver=2.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='mt-theme-style-css'  href='http://www.nnzhp.cn:80/wp-content/plugins/syntax-highlighter-mt/styles/shThemeDefault.css?ver=2.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='bcss-css'  href='http://www.nnzhp.cn:80/wp-content/themes/QQ/css/b.css?ver=3.3.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='qq-style-css'  href='http://www.nnzhp.cn:80/wp-content/themes/QQ/style.css?ver=4.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/plugins/syntax-highlighter-mt/scripts/shCore.js?ver=2.2.5'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/plugins/syntax-highlighter-mt/scripts/shAutoloader.js?ver=2.2.5'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/jquery.min.js?ver=2.0.0'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/bootstrap.min.js?ver=3.3.0'></script>
+<link rel='https://api.w.org/' href='http://www.nnzhp.cn:80/wp-json/' />
+<meta name="keywords" content="牛牛杂货铺,牛牛,软件测试,自动化测试,性能测试,python">
+<meta name="description" content="牛牛测试杂货铺">
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css" id="wp-custom-css">
+			/*
+您可以在此处加入您的CSS。
+
+点击上方的帮助图标来了解更多。
+*/
+		</style>
+			<script "text/javascript">var themeurl="http://www.nnzhp.cn:80/wp-content/themes/QQ",homeurl="http://www.nnzhp.cn:80";</script>
+		<!--[if lt IE 9]><script src="http://www.nnzhp.cn:80/wp-content/themes/QQ/js/html5.js"></script><![endif]-->
+		
+	</head>
+
+	<body>
+<div id="m-nav" class="m-nav">
+	<div class="m-nav-all">
+		<div class="m-logo-url">
+			<img src="http://www.nnzhp.cn:80/wp-content/themes/QQ/images/logo.jpg">
+			<h3>牛牛杂货铺</h3>
+			<span data-sign="0" class="user-login btn btn-danger"><i class="fa fa-user"></i>登录</span>&nbsp;<span data-sign="1" class="user-reg btn btn-success"><i class="fa fa-user-plus"></i>注册</span>
+		</div>
+		<ul class="nav">
+			<li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-27"><a href="http://www.nnzhp.cn:80/">首页</a></li>
+<li id="menu-item-537" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-537"><a href="http://www.nnzhp.cn:80/archives/category/python">Python</a></li>
+<li id="menu-item-538" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-538"><a href="http://www.nnzhp.cn:80/archives/category/test">软件测试</a></li>
+<li id="menu-item-539" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-539"><a href="http://www.nnzhp.cn:80/archives/category/linux">Linux</a></li>
+<li id="menu-item-566" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-566"><a href="http://www.nnzhp.cn:80/archives/category/spider">爬虫</a></li>
+<li id="menu-item-540" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-540"><a href="http://www.nnzhp.cn:80/archives/category/life">胡言乱语</a></li>
+<li id="menu-item-541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-541"><a href="http://www.nnzhp.cn:80/link">友情链接</a></li>
+		</ul>
+	</div>
+</div>
+<div class="navbar">
+  <div class="container">
+	<div class="navbar-header-logo">
+					<img src="http://www.nnzhp.cn:80/wp-content/themes/QQ/images/logo.jpg">
+			</div>
+    <div class="navbar-header">
+      <a class="navbar-brand hidden-sm">牛牛杂货铺</a>
+    </div>
+			<div class="navbar-header-login">
+			<ul>
+				<li style="float:right; padding: 20px 15px;">
+					<a href="javascript:" class="user-login"><i class="fa fa-user"></i>登录</a>
+				</li>
+			</ul>
+		</div>
+	    <div class="navbar-collapse collapse" role="navigation">
+      <ul class="main-nav navbar-qq nav-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-27"><a href="http://www.nnzhp.cn:80/">首页</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-537"><a href="http://www.nnzhp.cn:80/archives/category/python">Python</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-538"><a href="http://www.nnzhp.cn:80/archives/category/test">软件测试</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-539"><a href="http://www.nnzhp.cn:80/archives/category/linux">Linux</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-566"><a href="http://www.nnzhp.cn:80/archives/category/spider">爬虫</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-540"><a href="http://www.nnzhp.cn:80/archives/category/life">胡言乱语</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-541"><a href="http://www.nnzhp.cn:80/link">友情链接</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+<form role="search" method="get" class="m-search" id="search-form" action="http://www.nnzhp.cn:80/">
+    <div class="search-form">
+    	<span id="search-form-close">&times;</span>
+        <input placeholder="Search for" type="text" value="" name="s" id="search-input-s" />
+        <input type="submit" class="webFont" id="searchsubmit" value="搜索" />
+    </div>
+</form>
+<div id="m-header" class="m-header">
+	<div id="showLeftPush" class="left m-header-button"></div>
+	<h1><a href="http://www.nnzhp.cn:80">牛牛杂货铺</a></h1>
+	<div id="search-trigger" style="font-size: 18px;" class="right m-header-search"></div>
+</div>
+<div id="m-container">
+				<div class="container containerall">
+	<div class="main">
+		<div id="content" class="index-single">
+			<header class="p-header">
+	<span class="right"><i class="fa fa-remove"></i></span>
+	<span class="right"><i class="fa fa-minus"></i></span>
+	<span class="right"><i class="fa fa-caret-down"></i></span>
+	<div class="p-logo">
+		<a>
+			<img src="http://www.nnzhp.cn:80/wp-content/themes/QQ/images/logo.jpg" >		</a>
+	</div>
+	<div class="p-data">
+					<a title="牛牛杂货铺">
+				牛牛杂货铺			</a>
+			</div>
+	<div class="p-qianming" title="互相讨论技术加qq：511402865">
+		<p><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="16" height="16" viewBox="0 0 32 32">
+				<path d="M15.795 1.888c-0.146 0.060-0.557 0.497-0.557 0.596 0 0.033-0.643 1.398-1.431 3.028s-1.464 3.054-1.504 3.167c-0.033 0.106-0.093 0.232-0.119 0.272-0.033 0.040-0.219 0.398-0.417 0.795-0.212 0.437-0.437 0.802-0.563 0.901-0.305 0.258-0.099 0.232-6.201 0.914-2.756 0.311-3.061 0.358-3.226 0.51-0.119 0.106-0.166 0.49-0.079 0.716 0.026 0.060 1.212 1.186 2.637 2.504 4.505 4.161 4.214 3.869 4.214 4.181 0 0.152-0.093 0.702-0.199 1.232-0.113 0.53-0.364 1.855-0.57 2.948s-0.444 2.345-0.53 2.783c-0.457 2.332-0.464 2.398-0.225 2.65 0.225 0.238 0.484 0.212 1.166-0.132 0.636-0.325 0.696-0.358 1.948-1.093 0.457-0.265 1.053-0.61 1.325-0.762s0.775-0.451 1.113-0.656c0.338-0.205 0.629-0.371 0.649-0.371 0.013 0 0.219-0.119 0.451-0.265s0.444-0.265 0.47-0.265c0.026 0 0.265-0.132 0.53-0.298 0.629-0.391 1.173-0.59 1.484-0.53 0.132 0.026 0.45 0.153 0.702 0.292 0.663 0.351 4.836 2.756 6.135 3.531 1.106 0.663 1.431 0.789 1.809 0.689 0.252-0.060 0.325-0.424 0.238-1.146-0.040-0.325-0.099-0.689-0.133-0.815-0.053-0.212-0.272-1.385-0.802-4.326-0.245-1.398-0.245-1.424 0.305-1.63 0.762-0.285 1.12-0.537 0.981-0.676-0.047-0.047-0.47 0.007-1.352 0.166-1.636 0.298-1.974 0.345-3.704 0.504-1.968 0.186-3.783 0.225-6.208 0.139-1.895-0.066-4.147-0.232-4.273-0.311-0.099-0.066-0.053-0.272 0.099-0.404 0.079-0.073 1.087-0.795 2.233-1.61 3.591-2.544 5.923-4.227 6.115-4.406 0.331-0.311 0.305-0.325-1.073-0.503-2.18-0.278-2.75-0.325-6.301-0.49-1.186-0.053-2.259-0.119-2.385-0.139-1.299-0.219 5.32-0.815 8.116-0.729 1.835 0.053 3.995 0.205 5.267 0.371 1.186 0.159 1.259 0.172 1.259 0.305 0 0.106-0.126 0.199-2.915 2.12-1.146 0.795-2.365 1.636-2.71 1.875-0.338 0.238-0.689 0.484-0.769 0.537-0.371 0.252-1.617 1.12-1.961 1.371-0.219 0.159-0.391 0.331-0.391 0.384 0 0.126 0.325 0.206 1.325 0.325 2.657 0.311 7.599 0.484 7.818 0.265 0.046-0.047 0.040-0.192-0.033-0.497-0.053-0.232-0.099-0.451-0.099-0.484 0-0.093 1.127-1.219 2.683-2.677 4.114-3.856 4.207-3.949 4.207-4.253 0-0.265-0.219-0.504-0.543-0.583-0.159-0.040-1.106-0.146-2.107-0.245-1-0.093-2.107-0.199-2.451-0.232-0.344-0.040-1.073-0.113-1.623-0.172-2.1-0.212-2.743-0.292-2.895-0.364-0.291-0.132-0.563-0.676-2.571-5.194-1.431-3.233-1.557-3.492-1.756-3.67-0.165-0.152-0.423-0.212-0.602-0.139v0z" fill="#ffcc00"/>
+			</svg>
+			互相讨论技术加qq：511402865		</p>
+	</div>
+</header>			<div class="qqfengget">
+																				
+	
+<article id="post-739" class="post-739 post type-post status-publish format-standard hentry category-linux category-test category-index" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/739">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/08/ab389f04cb5b57344ef9655428bccaec.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/739" title="mysql主从配置" class="post-title">mysql主从配置</a>
+				<small class="text-muted" title="6张图片"><span class="fa fa-photo"></span>6</small>
+			</h2>
+			<div class="posts-text">
+			一、MySQL主从介绍
+&nbsp;
+什么是主从呢，就是一个是正常用的，另外是一个是他的备份。主的叫做mast...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/08/07</li>
+				<li class="post-views"><i class="fa fa-eye"></i>403</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-732" class="post-732 post type-post status-publish format-standard hentry category-python" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/732">
+			<span class="item"><span class="thumb-span">
+															<img data-src="http://url.cn/Tfhpen?.jpg" class="thumb">												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/732" title="协程、gevent实现异步io、进程、线程、协程对比" class="post-title">协程、gevent实现异步io、进程、线程、协程对比</a>
+				<small class="text-muted" title="0张图片"><span class="fa fa-photo"></span>0</small>
+			</h2>
+			<div class="posts-text">
+			异步io的说白了就是遇到io操作的时候，就停下来去做别的事情。io分网络io和磁盘io，网络io比如说打开一个...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/08/06</li>
+				<li class="post-views"><i class="fa fa-eye"></i>295</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-728" class="post-728 post type-post status-publish format-standard hentry category-python" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/728">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/08/045cb081bff6026afc24964d57a26ea1.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/728" title="迭代器、生成器" class="post-title">迭代器、生成器</a>
+				<small class="text-muted" title="1张图片"><span class="fa fa-photo"></span>1</small>
+			</h2>
+			<div class="posts-text">
+			迭代器只有在调用next的时候才会取数据（所以省内存），或者循环的时候，一个对象里面实现了__iter__方法...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/08/02</li>
+				<li class="post-views"><i class="fa fa-eye"></i>262</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-710" class="post-710 post type-post status-publish format-standard hentry category-life" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/710">
+			<span class="item"><span class="thumb-span">
+															<img data-src="http://url.cn/Tfhpen?.jpg" class="thumb">												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/710" title="每日鸡汤" class="post-title">每日鸡汤</a>
+				<small class="text-muted" title="0张图片"><span class="fa fa-photo"></span>0</small>
+			</h2>
+			<div class="posts-text">
+			1、实力的来源不是胜利，唯有奋斗才能增强实力。当你历经苦难而不气馁，那就是实力。
+2、心有多远，你就能走多远。...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/08/02</li>
+				<li class="post-views"><i class="fa fa-eye"></i>288</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>1</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-719" class="post-719 post type-post status-publish format-standard hentry category-python" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/719">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/08/c1bba9a47cfe8fe7000f137f020ad623.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/719" title="socket、tcp/ip协议、udp协议" class="post-title">socket、tcp/ip协议、udp协议</a>
+				<small class="text-muted" title="5张图片"><span class="fa fa-photo"></span>5</small>
+			</h2>
+			<div class="posts-text">
+			socket通常也称作"套接字"，用于描述IP地址和端口，是一个通信链的句柄，应用程序通常通过"套接字"向网络...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/08/01</li>
+				<li class="post-views"><i class="fa fa-eye"></i>343</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>1</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-716" class="post-716 post type-post status-publish format-standard hentry category-python" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/716">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/07/dfed323cda2c87dddb466a6d921a9522.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/716" title="设计模式之单例模式" class="post-title">设计模式之单例模式</a>
+				<small class="text-muted" title="2张图片"><span class="fa fa-photo"></span>2</small>
+			</h2>
+			<div class="posts-text">
+			什么是设计模式，我们写代码就是为了解决一些实际的问题，当然在我们之前已经有很多优秀的程序员写了很多的代码，总结...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/07/31</li>
+				<li class="post-views"><i class="fa fa-eye"></i>209</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-712" class="post-712 post type-post status-publish format-standard hentry category-python" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/712">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/07/7f805e4768e3be1f82c4607433962085.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/712" title="发布自己的模块到pipy源" class="post-title">发布自己的模块到pipy源</a>
+				<small class="text-muted" title="6张图片"><span class="fa fa-photo"></span>6</small>
+			</h2>
+			<div class="posts-text">
+			程序员分享是个好习惯，咱们写了一个好用的模块，想分享出来，让全世界的python开发人员都，那写好了之后，就上...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/07/31</li>
+				<li class="post-views"><i class="fa fa-eye"></i>310</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-700" class="post-700 post type-post status-publish format-standard hentry category-python category-spider" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/700">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/07/18d564a3a401966b16d9e07dfc9b7ac6.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/700" title="爬虫学习笔记（十）scrapy入门，使用scrapy爬取猫眼电影top100" class="post-title">爬虫学习笔记（十）scrapy入门，使用scrapy爬取猫眼电影top100</a>
+				<small class="text-muted" title="7张图片"><span class="fa fa-photo"></span>7</small>
+			</h2>
+			<div class="posts-text">
+			上面篇博客说了scrapy的流程，这次先做个小项目，爬取到猫眼电影排行榜前100的电影名称、评分、上映时间、主...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/07/26</li>
+				<li class="post-views"><i class="fa fa-eye"></i>583</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>2</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-698" class="post-698 post type-post status-publish format-standard hentry category-python category-spider" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/698">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/07/60f2add20f0659e27d26435f28b8472e.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/698" title="爬虫学习笔记（九）scrapy爬虫框架流程介绍" class="post-title">爬虫学习笔记（九）scrapy爬虫框架流程介绍</a>
+				<small class="text-muted" title="1张图片"><span class="fa fa-photo"></span>1</small>
+			</h2>
+			<div class="posts-text">
+			Scrapy是用纯Python实现一个为了爬取网站数据、提取结构性数据而编写的应用框架，用途非常广泛。
+当然用...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/07/26</li>
+				<li class="post-views"><i class="fa fa-eye"></i>300</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-694" class="post-694 post type-post status-publish format-standard hentry category-python category-spider" >
+		<div class="focus">
+			<a href="http://www.nnzhp.cn:80/archives/694">
+			<span class="item"><span class="thumb-span">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/07/14a985812ded506249fd89a39a3e15f8.png" />
+												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.nnzhp.cn:80/archives/694" title="爬虫实战，selenium爬取斗鱼吃鸡所有主播信息和人气" class="post-title">爬虫实战，selenium爬取斗鱼吃鸡所有主播信息和人气</a>
+				<small class="text-muted" title="3张图片"><span class="fa fa-photo"></span>3</small>
+			</h2>
+			<div class="posts-text">
+			吃鸡很火，咱们爬下斗鱼的网站，把所有的刺激战场的主播和人气爬下来，存到excel里面，初步做个分析，网站是 h...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.nnzhp.cn:80/wp-content/uploads/2016/12/2016aj5kn45fjk5-150x150.jpg" width="96" height="96" alt="朝花夕拾" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.nnzhp.cn:80/archives/author/niuhanyang" target="_blank">朝花夕拾</a>  2018/07/23</li>
+				<li class="post-views"><i class="fa fa-eye"></i>469</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+											</div>
+		</div>
+		<div class="paging">
+			<a id='text-indent' class='current'>1</a> <a id='text-indent' href='http://www.nnzhp.cn:80/page/2' title='第 2 页'>2</a> <a id='text-indent' href='http://www.nnzhp.cn:80/page/3' title='第 3 页'>3</a> <a id="text-indent">...</a><a id='text-indent' href='http://www.nnzhp.cn:80/page/2' title='下一页'>›</a> <a id='text-indent' href='http://www.nnzhp.cn:80/page/9' title='最后页'>»</a> 		</div>
+	</div>
+	<div class="sidebar">
+				<header class="s-header">
+		<div class="s-logo">
+			<a href="http://www.nnzhp.cn:80">
+				<img src="http://www.nnzhp.cn:80/wp-content/themes/QQ/images/logo.jpg" >			</a>
+		</div>
+		<div class="s-data">
+							<a href="http://www.nnzhp.cn:80" title="牛牛杂货铺">
+					牛牛杂货铺				</a>
+					</div>
+		<div class="s-qianming" contenteditable="true" title="互相讨论技术加qq：511402865">
+			<p>互相讨论技术加qq：511402865</p>
+		</div>
+		<div class="s-qqicons">
+			<a class="s-qqkongjian" href="http://user.qzone.qq.com/511402865" title="QQ空间" target="_blank"></a>
+			<a class="s-qqyouxiang" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=511402865@qq.com" title="QQ邮箱" target="_blank"></a>
+			<a class="s-qqweibo" href="" title="QQ微博" target="_blank"></a>
+		</div>
+		<form role="search" method="get" id="search-form" action="http://www.nnzhp.cn:80/">
+			<input class="searchInput" type="text" value="" name="s" id="s" placeholder="你想搜点什么~" />
+			<input class="searchBtn" type="submit" title="搜索" value="搜索">
+		</form>
+	</header>
+	<div class="s-main">
+		<div class="s-tabs">
+			<div id="tabs">
+				<ul class="tab_menu" role="tablist">
+					<li class="tabs1 active" role="presentation">
+						<a href="#tabs-w" class="tabsa btip" title="热门文章" role="tab" data-placement="top" data-toggle="tab">
+							<i class="fa fa-file-text">
+							</i>
+						</a>
+					</li>
+					<li class="tabs2" role="presentation">
+						<a href="#tabs-l" class="tabsa btip" title="近期评论" role="tab" data-placement="top" data-toggle="tab">
+							<i class="fa fa-comments-o">
+							</i>
+						</a>
+					</li>
+					<li class="tabs3" role="presentation">
+						<a href="#tabs-b" class="tabsa btip" title="分类标签" role="tab" data-placement="top" data-toggle="tab">
+							<i class="fa fa-tags">
+							</i>
+						</a>
+					</li>
+					<li class="tabs4" role="presentation">
+						<a href="#tabs-d" class="tabsa btip" title="博主信息" role="tab" data-placement="top" data-toggle="tab">
+							<i class="fa fa-user">
+							</i>
+						</a>
+					</li>
+				</ul>
+				<div id="tabs_container" class="tab-content">
+					<div id="tabs-w" class="tab-pane fade in active" class="tab-pane">
+						<ul>
+							<li id="accordion"><a href="http://www.nnzhp.cn:80/archives/322" title="Jmeter中处理json"><i class="fa fa-caret-right"></i>Jmeter中处理json</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/330" title="少年，来点正能量吧！"><i class="fa fa-caret-right"></i>少年，来点正能量吧！</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/488" title="linux常用命令"><i class="fa fa-caret-right"></i>linux常用命令</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/510" title="python操作数据库"><i class="fa fa-caret-right"></i>python操作数据库</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/666" title="使用python拼接所有好友的头像"><i class="fa fa-caret-right"></i>使用python拼接所有好友的头像</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/176" title="简单的python http接口自动化脚本"><i class="fa fa-caret-right"></i>简单的python http接口自动化脚本</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/527" title="学习自动化的正确姿势"><i class="fa fa-caret-right"></i>学习自动化的正确姿势</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/154" title="python学习笔记(四):函数"><i class="fa fa-caret-right"></i>python学习笔记(四):函数</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/590" title="Jenkins安装以及邮件配置"><i class="fa fa-caret-right"></i>Jenkins安装以及邮件配置</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/356" title="使用类来写装饰器"><i class="fa fa-caret-right"></i>使用类来写装饰器</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/131" title="python学习笔记(一):python简介和入门"><i class="fa fa-caret-right"></i>python学习笔记(一):python简介和入门</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/160" title="python学习笔记(三):文件操作和集合"><i class="fa fa-caret-right"></i>python学习笔记(三):文件操作和集合</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/162" title="python学习笔记(二):python数据类型"><i class="fa fa-caret-right"></i>python学习笔记(二):python数据类型</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/166" title="Centos下安装Mongodb"><i class="fa fa-caret-right"></i>Centos下安装Mongodb</a></li><li id="accordion"><a href="http://www.nnzhp.cn:80/archives/169" title="Centos下安装Redis"><i class="fa fa-caret-right"></i>Centos下安装Redis</a></li>						</ul>
+					</div>
+					<div id="tabs-l" class="tab-pane fade" role="tabpanel">
+						<ul>
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/154#comment-294" title="张流量在python学习笔记(四):函数发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">张流量</span><br />牛牛，我要给你生个猴子！</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/719#comment-293" title="张流量在socket、tcp/ip协议、udp协议发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">张流量</span><br />牛哥厉害了</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/488#comment-291" title="匿名在linux常用命令发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">匿名</span><br />解压那里有个问题 压缩：gzip desc   解压：gunzip desc.gz</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/488#comment-289" title="小草vs在linux常用命令发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">小草vs</span><br />谢谢分享</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/590#comment-287" title="在Jenkins安装以及邮件配置发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />赞！！！不过设置邮件发送那儿不是全局设置是系统设置</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/666#comment-279" title="hua在使用python拼接所有好友的头像发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">hua</span><br />发现自己的了</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/710#comment-268" title="牛杂在每日鸡汤发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">牛杂</span><br />受教了</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/154#comment-259" title="帅哥董在python学习笔记(四):函数发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">帅哥董</span><br />草包牛肉</a>
+				</li>
+			</ul>					</div>
+					<div id="tabs-b" class="tab-pane fade" role="tabpanel">
+						<div class="login_tit">
+							<i class="fa fa-quote-left"></i> 热门标签<i class="fa fa-quote-right"></i>
+						</div>
+								<div class="items">暂无标签！</div>					</div>
+					<div id="tabs-d" class="tab-pane fade" role="tabpanel">
+						<p><i class="fa fa-quote-left"></i> 网站信息<i class="fa fa-quote-right"></i></p>
+						<p>文章总数量：82 篇</p>
+						<p>页面总数量：2 个</p>
+						<p>分类总数量：6 个</p>
+						<p>标签总数量：0 个</p>
+						<p>会员总数量：7 个</p>
+						<p>链接总数量：7 个</p>
+						<p>评论总数量：77 条</p>
+						<p>浏览总数量：88319 次<br>
+						<p>运行总天数：3151 天</p>
+						<p>最近更新期：2018年10月16日</p>
+					</div>
+				</div>
+				<!--End tabs container-->
+			</div>
+			<!--End tabs-->
+		</div>
+	</div>
+	<div class="s-footer">
+	</div>		<section class="widget widget_ui_posts"><h3 class="widget_tit">最新发布</h3>
+	  <ul class="nopic">
+						<li>
+			<a href="http://www.nnzhp.cn:80/archives/739" class="thumbnails">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/08/ab389f04cb5b57344ef9655428bccaec.png" />
+												</a>
+			<h3>
+				<a href="http://www.nnzhp.cn:80/archives/739">
+					mysql主从配置				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.nnzhp.cn:80/archives/732" class="thumbnails">
+															<img src="http://www.nnzhp.cn:80/wp-content/themes/QQ/images/thumbnail.png" />
+												</a>
+			<h3>
+				<a href="http://www.nnzhp.cn:80/archives/732">
+					协程、gevent实现异步io、进程、线程、协程对比				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.nnzhp.cn:80/archives/728" class="thumbnails">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/08/045cb081bff6026afc24964d57a26ea1.png" />
+												</a>
+			<h3>
+				<a href="http://www.nnzhp.cn:80/archives/728">
+					迭代器、生成器				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.nnzhp.cn:80/archives/710" class="thumbnails">
+															<img src="http://www.nnzhp.cn:80/wp-content/themes/QQ/images/thumbnail.png" />
+												</a>
+			<h3>
+				<a href="http://www.nnzhp.cn:80/archives/710">
+					每日鸡汤				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.nnzhp.cn:80/archives/719" class="thumbnails">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/08/c1bba9a47cfe8fe7000f137f020ad623.png" />
+												</a>
+			<h3>
+				<a href="http://www.nnzhp.cn:80/archives/719">
+					socket、tcp/ip协议、udp协议				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.nnzhp.cn:80/archives/716" class="thumbnails">
+															<img src="http://www.nnzhp.cn:80/wp-content/uploads/2018/07/dfed323cda2c87dddb466a6d921a9522.png" />
+												</a>
+			<h3>
+				<a href="http://www.nnzhp.cn:80/archives/716">
+					设计模式之单例模式				</a>
+			</h3>
+		</li>
+			  </ul>
+	</section>
+	<section class="widget widget_ui_posts"><h3 class="widget_tit">最新评论</h3>
+		<div class="cbl-comment">
+			<ul>
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/154#comment-294" title="张流量在python学习笔记(四):函数发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">张流量</span><br />牛牛，我要给你生个猴子！</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/719#comment-293" title="张流量在socket、tcp/ip协议、udp协议发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">张流量</span><br />牛哥厉害了</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/488#comment-291" title="匿名在linux常用命令发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">匿名</span><br />解压那里有个问题 压缩：gzip desc   解压：gunzip desc.gz</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/488#comment-289" title="小草vs在linux常用命令发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">小草vs</span><br />谢谢分享</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/590#comment-287" title="在Jenkins安装以及邮件配置发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />赞！！！不过设置邮件发送那儿不是全局设置是系统设置</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/666#comment-279" title="hua在使用python拼接所有好友的头像发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">hua</span><br />发现自己的了</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/710#comment-268" title="牛杂在每日鸡汤发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">牛杂</span><br />受教了</a>
+				</li>
+			
+				<li>
+					<a href="http://www.nnzhp.cn:80/archives/154#comment-259" title="帅哥董在python学习笔记(四):函数发表的评论"><img data-src="http://www.nnzhp.cn:80/wp-content/plugins/wp-user-avatar/images/wpua-96x96.png" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">帅哥董</span><br />草包牛肉</a>
+				</li>
+			</ul>		</div>
+	</section>
+	<section class="widget widget_recent_comments"><h3 class="widget_tit">近期评论</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">张流量</span>发表在《<a href="http://www.nnzhp.cn:80/archives/154#comment-294">python学习笔记(四):函数</a>》</li><li class="recentcomments"><span class="comment-author-link">张流量</span>发表在《<a href="http://www.nnzhp.cn:80/archives/719#comment-293">socket、tcp/ip协议、udp协议</a>》</li><li class="recentcomments"><span class="comment-author-link">匿名</span>发表在《<a href="http://www.nnzhp.cn:80/archives/488#comment-291">linux常用命令</a>》</li><li class="recentcomments"><span class="comment-author-link">小草vs</span>发表在《<a href="http://www.nnzhp.cn:80/archives/488#comment-289">linux常用命令</a>》</li><li class="recentcomments"><span class="comment-author-link">匿名</span>发表在《<a href="http://www.nnzhp.cn:80/archives/590#comment-287">Jenkins安装以及邮件配置</a>》</li></ul></section>		</div>
+	</div>	</div>
+<footer id="m-footer" class="foot">
+	<div class="container">
+		<div class="f-copy">
+			&copy;2018&nbsp;牛牛杂货铺  
+		</div>
+	</div>
+</footer>
+
+<div id="loading-wrap"><div class="loading"><div class="spinner"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div></div></div>
+
+<div id="back-to-top" class="red btip" data-scroll="body" style="display: block;" title="返回顶部" data-placement="top">
+	<svg id="point-up" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+		<path d="M23.588 17.637c-0.359-0.643-0.34-1.056-2.507-3.057 0.012-7.232-4.851-12.247-5.152-12.55 0-0.010 0-0.015 0-0.015s-0.003 0.003-0.007 0.007l-0.007-0.007c0 0 0 0.005 0 0.015-0.299 0.305-5.141 5.342-5.097 12.575-2.158 2.010-2.138 2.423-2.493 3.068-0.65 1.178-0.481 5.888 0.132 6.957 0.613 1.069 1.629 0.293 1.977-0.004 0.348-0.298 1.885-2.264 2.263-2.176 0 0 0.465-0.090 0.989 0.414 0.518 0.498 1.462 0.966 2.27 1.033 0 0.001 0 0.002-0 0.003 0.005-0.001 0.010-0.001 0.015-0.002 0.005 0 0.010 0.001 0.015 0.001 0-0.001-0-0.002 0-0.003 0.808-0.070 1.749-0.543 2.265-1.043 0.522-0.507 0.988-0.419 0.988-0.419 0.378-0.090 1.923 1.869 2.272 2.165 0.35 0.296 1.369 1.067 1.977-0.005 0.608-1.072 0.756-5.783 0.101-6.958v0 0zM15.95 14.86c-1.349 0.003-2.445-1.112-2.448-2.492-0.003-1.38 1.088-2.5 2.437-2.503 1.349-0.003 2.445 1.112 2.448 2.492 0.003 1.379-1.088 2.5-2.437 2.503v0 0zM17.76 24.876c-0.615 0.474-1.236 0.633-1.801 0.626-0.566 0.009-1.187-0.147-1.804-0.617-0.553-0.403-1.047-0.348-1.308 0.003-0.261 0.351-0.169 2.481 0.152 2.939 0.321 0.458 0.697-0.298 1.249-0.327 0.552-0.028 1.011 1.103 1.221 1.75 0.107 0.331 0.274 0.633 0.5 0.654 0.226-0.023 0.392-0.326 0.497-0.657 0.207-0.648 0.661-1.781 1.213-1.756 0.553 0.026 0.932 0.78 1.251 0.321 0.319-0.459 0.401-2.59 0.139-2.94-0.262-0.35-0.757-0.403-1.308 0.003v0 0z" fill="#"></path>
+	</svg>
+</div>
+<div id="sign" class="sign">
+    <div class="part loginPart">
+    <form id="login" action="http://www.nnzhp.cn:80/wp-login.php" method="post" novalidate="novalidate">
+                <h3>登录<p class="status"></p></h3>
+        <p>
+            <label class="icon" for="username"><i class="fa fa-user"></i></label>
+            <input class="input-control" id="username" type="text" placeholder="请输入用户名" name="username" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="password"><i class="fa fa-lock"></i></label>
+            <input class="input-control" id="password" type="password" placeholder="请输入密码" name="password" required="" aria-required="true">
+        </p>
+        <p class="safe">
+            <label class="remembermetext" for="rememberme"><input name="rememberme" type="checkbox" checked="checked" id="rememberme" class="rememberme" value="forever">记住我的登录</label>
+            <a class="lost" href="http://www.nnzhp.cn:80/wp-login.php?action=lostpassword">忘记密码 ?</a>
+        </p>
+        <p>
+            <input class="submit" type="submit" value="登录" name="submit">
+        </p>
+        <a class="close"><i class="fa fa-times"></i></a>
+        <input type="hidden" id="security" name="security" value="99bf37c7a6">
+		<input type="hidden" name="_wp_http_referer" value="/">
+	</form>
+        </div>
+    <div class="part registerPart">
+    <form id="register" action="http://www.nnzhp.cn:80/wp-login.php?action=register" method="post" novalidate="novalidate">
+        <div id="login-active" class="switch"><i class="fa fa-toggle-off"></i>切换登录</div>
+        <h3>注册<p class="status"></p></h3>    
+        <p>
+            <label class="icon" for="user_name"><i class="fa fa-user"></i></label>
+            <input class="input-control" id="user_name" type="text" name="user_name" placeholder="输入英文用户名" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="user_email"><i class="fa fa-envelope"></i></label>
+            <input class="input-control" id="user_email" type="email" name="user_email" placeholder="输入常用邮箱" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="user_pass"><i class="fa fa-lock"></i></label>
+            <input class="input-control" id="user_pass" type="password" name="user_pass" placeholder="密码最小长度为6" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="user_pass2"><i class="fa fa-retweet"></i></label>
+            <input class="input-control" type="password" id="user_pass2" name="user_pass2" placeholder="再次输入密码" required="" aria-required="true">
+        </p>
+        <p>
+            <input class="submit" type="submit" value="注册" name="submit">
+        </p>
+        <a class="close"><i class="fa fa-times"></i></a>  
+        <input type="hidden" id="user_security" name="user_security" value="7d9d8c12f8"><input type="hidden" name="_wp_http_referer" value="/"> 
+    </form>
+    </div>
+    <div class="clear"></div>
+</div><div id="jquery_jplayer" class="jp-jplayer"></div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var MTBrushParams = {"baseUrl":"http:\/\/www.nnzhp.cn:80\/wp-content\/plugins\/syntax-highlighter-mt"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/plugins/syntax-highlighter-mt/brushTypes.js?ver=2.2.5'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/lazyload.min.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/main.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/mousewheel.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/scrollbar.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/player.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qq = {"is_mobile":"0","ajaxurl":"http:\/\/www.nnzhp.cn:80\/wp-admin\/admin-ajax.php","url":"http:\/\/www.nnzhp.cn:80\/","ajax_site_title":"\u725b\u725b\u6742\u8d27\u94fa","postid":"433"};
+var ajax_sign_object = {"redirecturl":"http:\/\/www.nnzhp.cn:80","ajaxurl":"http:\/\/www.nnzhp.cn:80\/wp-admin\/admin-ajax.php","loadingmessage":"\u6b63\u5728\u8bf7\u6c42\u4e2d\uff0c\u8bf7\u7a0d\u7b49..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/index.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-content/themes/QQ/js/ajax-comment.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.nnzhp.cn:80/wp-includes/js/wp-embed.min.js?ver=4.7.11'></script>
+</body>
+</html>

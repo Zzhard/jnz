@@ -1,0 +1,33 @@
+1、atp回顾一下
+2、unittest
+    1、函数名必须是test开头，unittest才会帮你执行用例
+    2、用例运行的顺序是按照函数的首字母排序的，a-z
+3、接口自动化
+4、Jenkins
+
+
+1、不支持有依赖的接口
+2、域名/ip 可配置
+3、多线程运行
+
+
+
+1、先把以前的数据库备份
+    mysqldump -uroot -p12345 -h192.168.1.13  main > /xxx/xx/data/a.sql
+
+2、你再执行自动化case
+
+3、执行完之后，你把数据库回复回来
+    #sql.execute('drop database main;')
+    sql.execute('RENAME database main TO main_20181130')
+    sql.execute('create database main;')
+    os.system('mysql -uroot -p123456 -h192.168.1.13 main < /xxx/xx/data/a.sql ')
+
+
+持续集成：
+    运行自动化测试
+    自动化部署
+
+
+
+

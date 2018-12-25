@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" lang='zh-cn'>
+<head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control"  content="no-transform">
+  <meta name="Generator" content="chanzhi4.2.1 www.chanzhi.org">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestTest软件测试 - BestTest软件测试技术培训</title>
+<meta name="keywords" content="性能测试,自动化测试,安全测试,性能测试培训，北京性能测试培训，自动化测试培训，安全测试培训，手机自动化测试培训">
+<meta name="description" content="">
+ <script language='Javascript'>var config={"webRoot":"\/","cookieLife":30,"requestType":"PATH_INFO","requestFix":"-","moduleVar":"m","methodVar":"f","viewVar":"t","defaultView":"html","themeRoot":"\/theme\/","currentModule":"index","currentMethod":"index","clientLang":"zh-cn","requiredFields":"","save":"\u4fdd\u5b58","router":"\/index.php","runMode":"front","langCode":""}
+</script>
+<link rel='stylesheet' href='/template/default/theme/default/all.css?v=4.2.1' type='text/css' media='screen' />
+<script src='/js/all.js?v=4.2.1' type='text/javascript'></script>
+<link rel='stylesheet' href='/data/css/default/flat/style.css??v=4.2.1' type='text/css' media='screen' />
+<link rel='icon' href='/data/upload/201709/f_dc402d5974e8ec902d323530d9196d1c.ico' type='image/x-icon' />
+<link rel='shortcut icon' href='/data/upload/201709/f_dc402d5974e8ec902d323530d9196d1c.ico' type='image/x-icon' />
+<link href='/rss.xml' title='BestTest软件测试技术培训' type='application/rss+xml' rel='alternate' /><!--[if lt IE 9]>
+<script src='/js/all.ie8.js?v=4.2.1' type='text/javascript'></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script src='/js/all.ie9.js?v=4.2.1' type='text/javascript'></script>
+<![endif]-->
+<script language='Javascript'>if(typeof(v) != "object") v = {};v.lang = {"confirmDelete":"\u60a8\u786e\u5b9a\u8981\u6267\u884c\u5220\u9664\u64cd\u4f5c\u5417\uff1f","deleteing":"\u5220\u9664\u4e2d","doing":"\u5904\u7406\u4e2d","loading":"\u52a0\u8f7d\u4e2d","timeout":"\u7f51\u7edc\u8d85\u65f6,\u8bf7\u91cd\u8bd5","errorThrown":"<h4>\u6267\u884c\u51fa\u9519\uff1a<\/h4>"};</script>
+<style>#navbar{
+    margin-bottom:5px;
+}
+.focus-top{
+   padding-bottom:5px;
+}
+.focus-top div:nth-child(1){
+    width:1140px;
+    height:280px;
+    overflow:hidden;
+}
+#block10{height:470px !important;}
+#block1{height:470px !important;}
+#block221{height:470px !important;}
+.focus-top div:nth-child(2){
+    width:1140px;
+    height:120px;
+    overflow:hidden;
+}
+.focus-top div:nth-child(2) .panel-body span{
+    height:60px;
+    line-height:1.2;
+}
+.focus-top div:nth-child(2) .panel-body{
+    padding:5px 15px;
+}
+.focus-middle{
+    margin-bottom:-15px;
+}
+.focus-middle div{
+    margin-bottom:-10px;
+}
+.focus-bottom div{
+    margin-bottom:-10px;
+}
+#powerby{
+    display:none;
+}
+#slide{
+    width:1140px;
+    height:280px;
+    display:block;
+    overflow:hidden;
+}
+#slide .carousel-inner{
+    width:1140px;
+    height:280px;
+    overflow:hidden;
+}
+#slide .carousel-inner .item{
+    width:1140px;
+    height:280px;
+    overflow:hidden;
+}
+#slide .item img{
+    width:100%;
+    height:100%;
+}
+#header{
+    margin:0 auto;
+    padding:0;
+    margin-bottom:0;
+    min-height:50px;
+}
+#footer{
+    margin-top:20px;
+}
+.focus-bottom{
+    width:80px;
+    height:25px;
+    display:block;
+    position: fixed;
+    top: 55%;
+    margin: 0;
+    right: 0;
+}
+.focus-bottom img{
+    width:100%;
+    height:100%;
+}
+body{text-align:left;color:#444;font-size:14px;font-family:"microsoft yahei";}
+img{border:0}
+*{margin:0;padding:0}
+ul{list-style:none}
+.header_l img{height:65px;margin-top:10px}
+select,input,img,select{vertical-align:middle}
+a{text-decoration:none;cursor:pointer;color:#000;font-weight:normal;}
+p{margin: 10px 0 10px !important;}
+a:hover{color:#0f91ed}
+.rides-cs {  font-size: 12px; background:#29a7e2; position: fixed; top:30%; right: 0px; _position: absolute; z-index: 1500; border-radius:6px 0px 0 6px;}
+.rides-cs a { color: #00A0E9;}
+.rides-cs a:hover { color: #ff8100; text-decoration: none;}
+.rides-cs .floatL { width: 36px; float:left; position: relative; z-index:1;margin-top: 21px;height: 181px;}
+.rides-cs .floatL a { font-size:0; text-indent: -999em; display: block;}
+.rides-cs .floatR { width: 130px; float: left; padding: 5px; overflow:hidden;}
+.rides-cs .floatR .cn {background:#F7F7F7; border-radius:6px;margin-top:4px;}
+.rides-cs .cn .titZx{ font-size: 14px; color: #333;font-weight:600; line-height:24px;padding:5px;text-align:center;}
+.cn h3{
+    margin:0;
+}
+.rides-cs .cn ul {padding:0px;}
+.rides-cs .cn ul li { line-height: 38px; height:38px;border-bottom: solid 1px #E6E4E4;overflow: hidden;text-align:center;}
+.rides-cs .cn ul li span { color: #777;}
+.rides-cs .cn ul li a{color: #777;}
+.rides-cs .cn ul li img { vertical-align: middle; width:70px;height:20px;}
+.rides-cs .btnOpen, .rides-cs .btnCtn {  position: relative; z-index:9; top:25px; left: 0;  background-image: url(/data/upload/shopnc.png); background-repeat: no-repeat; display:block;  height: 146px; padding: 8px;}
+.rides-cs .btnOpen { background-position: -410px 0;}
+.rides-cs .btnCtn { background-position: -450px 0;}
+.rides-cs ul li.top { border-bottom: solid #ACE5F9 1px;}
+.rides-cs ul li.bot { border-bottom: none;}
+
+#rightDocker{
+    top:25%;
+}
+.all-bottom{
+    display:none;
+}
+
+.nav .active a{background-color:#00c2c9 !important; border-radius:3px !important;}
+.nav li a:hover{ background-color:#00c2c9 !important;}
+#block222{
+    display:none;
+}
+.logo{
+    height:75px;
+    width:90px;
+}
+.list-condensed{
+    width:100%;
+}
+
+#siteSlogan span{
+    color:#2d3e4e;
+}
+.page-side{
+    display:block;
+    height:615px;
+}
+.page-side div{
+    display:block !important;
+}</style></head>
+<body>
+<div class='page-container'>
+  <header id='header' class='clearfix'>
+  <div id='headTitle'>
+    <div class="wrapper">
+                  <div id='siteLogo'>
+        <a href='/' ><img src='/data/upload/201709/f_d351b3e37d1962a66bb2206623037ca3.png' class='logo' title='北京百测技术咨询有限公司' />
+</a>
+      </div>
+            <div id='siteSlogan'><span>我们不仅认真，我们还很任性，Besttest，带你学习带你飞，让你职后工资能任性一回</span></div>
+    </div>
+  </div>
+  <div id='headNav'>
+    <div class='wrapper'>
+      <nav>
+                <span id='languageBar'></span>
+      </nav>
+    </div>
+  </div>
+  </header>
+<style>#block12{}#block12 .panel-heading{}</style>    <nav id='navbar' class='navbar' role='navigation'>
+    <div class='navbar-header'>
+      <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#navbarCollapse'>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </button>
+      <a class='navbar-brand' href='/'><i class='icon-home'></i></a>
+    </div>
+    <div class='collapse navbar-collapse' id='navbarCollapse'>
+      <ul class='nav navbar-nav'>
+                                <li class="dropdown nav-page-48">
+                <a href='/page/48.html' class="dropdown-toggle" data-toggle="dropdown" target='_blank'>课程内容 <b class='caret'></b></a>
+                <ul class='dropdown-menu' role='menu'>
+                                                            <li class='nav-system-home'><a href='/' >首页</a>
+</li>
+                                                                                <li class='nav-page-3'><a href='/page/3.html' target='_blank'>高级性能测试&全栈测试</a>
+</li>
+                                                                                <li class='nav-page-47'><a href='/page/47.html' target='_blank'>高级Python自动化实战班</a>
+</li>
+                                                                                <li class='nav-page-4'><a href='/page/4.html' target='_blank'>高级安全测试实战应用</a>
+</li>
+                                                                                <li class='nav-page-5'><a href='/page/5.html' target='_blank'>高级Java自动化实战班</a>
+</li>
+                                                                                <li class='nav-page-50'><a href='/page/50.html' target='_blank'>报名须知</a>
+</li>
+                                      <!-- end nav2 -->
+                </ul>
+            </li>
+                                        <li class='nav-article-15'><a href='/article/c15.html' target='_blank'>精品原创</a>
+</li>
+                                          <li class='nav-page-6'><a href='/page/6.html' target='_blank'>视频中心</a>
+</li>
+                                            <li class="dropdown nav-page-9">
+                <a href='/page/9.html' class="dropdown-toggle" data-toggle="dropdown" target='_blank'>企业服务 <b class='caret'></b></a>
+                <ul class='dropdown-menu' role='menu'>
+                                                            <li class='nav-page-10'><a href='/page/10.html' target='_blank'>企业委培</a>
+</li>
+                                                                                <li class='nav-page-9'><a href='/page/9.html' target='_blank'>企业培训</a>
+</li>
+                                                                                <li class='nav-page-11'><a href='/page/11.html' target='_blank'>外包服务</a>
+</li>
+                                      <!-- end nav2 -->
+                </ul>
+            </li>
+                                        <li class='nav-page-7'><a href='/page/7.html' target='_blank'>师资力量</a>
+</li>
+                                            <li class="dropdown nav-system-company">
+                <a href='/company/' class="dropdown-toggle" data-toggle="dropdown" target='_blank'>关于我们 <b class='caret'></b></a>
+                <ul class='dropdown-menu' role='menu'>
+                                                            <li class='nav-page-30'><a href='/page/30.html' target='_blank'>关于我们</a>
+</li>
+                                                                                <li class='nav-page-28'><a href='/page/28.html' target='_blank'>诚聘英才</a>
+</li>
+                                                                                <li class='nav-page-27'><a href='/page/27.html' target='_blank'>联系方式</a>
+</li>
+                                                                                <li class='nav-page-29'><a href='/page/29.html' target='_blank'>企业动态</a>
+</li>
+                                      <!-- end nav2 -->
+                </ul>
+            </li>
+                                        <li class=''><a href='http://user.qzone.qq.com/1473732204/2' target='_blank'>学员就业</a>
+</li>
+                                          <li class='nav-page-31'><a href='/page/31.html' target='_blank'>测试招聘</a>
+</li>
+                                          <li class='nav-page-32'><a href='/page/32.html' target='_blank'>学员评价</a>
+</li>
+                                            <li class="dropdown nav-page-33">
+                <a href='/page/33.html' class="dropdown-toggle" data-toggle="dropdown" target='_blank'>安言安语 <b class='caret'></b></a>
+                <ul class='dropdown-menu' role='menu'>
+                                                            <li class='nav-page-33'><a href='/page/33.html' target='_blank'>关于安大叔</a>
+</li>
+                                                                                <li class='nav-page-34'><a href='/page/34.html' target='_blank'>关于当前培训的一些真实乱象</a>
+</li>
+                                                                                <li class='nav-page-35'><a href='/page/35.html' target='_blank'>关于学习关于未来关于已经老去的80后和即将老去的90后</a>
+</li>
+                                      <!-- end nav2 -->
+                </ul>
+            </li>
+                  <!-- end nav1 -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class='page-wrapper'>
+    <div class='page-content'>
+      <script language='javascript'>$(function() {$(".tree").treeview({collapsed: false, unique: false}) })</script>
+
+<div id='focus' class='block-list'>
+  <div class='row focus-top' data-default-grid='12'><div class='col-md-12' data-grid='12'><div id='slide' class='carousel slide' data-ride='carousel'>
+  <div class='carousel-inner'>
+                            <div class='item' data-url='/page/7.html'  data-target=''>
+    <img src='/data/upload/201507/f_820afe77f3985cdbf0daf5be97c24ddb.png'  />
+          <div class='carousel-caption'>
+        <h2 style='color:#FFF'></h2>
+        <div></div>
+              </div>
+    </div>
+                        <div class='item' data-url='http://user.qzone.qq.com/1473732204/2'  data-target='1'>
+    <img src='/data/upload/201507/f_f8620171486b4fafcf556c2a0033145d.png'  />
+          <div class='carousel-caption'>
+        <h2 style='color:#FFF'></h2>
+        <div></div>
+              </div>
+    </div>
+                        <div class='item' data-url='/page/7.html'  data-target=''>
+    <img src='/data/upload/201507/f_249b4fad72f9538058bd3c92431f2f92.png'  />
+          <div class='carousel-caption'>
+        <h2 style='color:#FFF'></h2>
+        <div></div>
+              </div>
+    </div>
+                        <div class='item' data-url='/page/32.html'  data-target=''>
+    <img src='/data/upload/201507/f_9228c8a62fe4cac96435632575c2ccbd.png'  />
+          <div class='carousel-caption'>
+        <h2 style='color:#FFF'></h2>
+        <div></div>
+              </div>
+    </div>
+      </div>
+    <a class='left carousel-control' href='#slide' data-slide='prev'> <i class='icon-prev'></i> </a>
+  <a class='right carousel-control' href='#slide' data-slide='next'> <i class='icon-next'></i> </a>
+  </div>
+<style>#block5{}#block5 .panel-heading{}</style></div><div class='col-md-4 col-auto'><div id="block219" class='panel panel-block panel-borderless panel-titleless'>
+  <div class='panel-heading'>
+    <strong>banner</strong>
+      </div>
+  <div class='panel-body'><p style="text-indent:2em;"><span style="color:#E53333;"><span style="font-size:18px;color:#E53333;"><a href="http://user.qzone.qq.com/1473732204/2" target="_blank"><span style="font-size:12px;color:#E53333;line-height:1.5;"><strong>B</strong></span><span style="font-size:18px;"></span><span style="font-size:12px;color:#E53333;line-height:1.5;"><strong>esttest毕业学员均已全部就业且平均工资在13000元/月以上，不少学员成功入职阿里巴巴、蚂蚁金服、腾讯、百度、去哪网、滴滴、京东、乐视网、携程网、网易、当当、美团、奇虎360、艺龙网、58同城、搜狐、搜狗、联想、赶集网、聚美优品、唯品会、汽车之家、酷狗、同程网、驴妈妈、途牛、搜房网、光宇游戏、美丽说、宜信等一线企业，更涌现了年薪28W、32W、34W、38W、39W、40W等高薪就业的明星学员，其中部分学员就业工资已经秒杀其他测试机构所谓的明星讲师。</strong></span></a></span></span></p>
+<p style="text-indent:2em;"><span style="color:#E53333;"><span style="font-size:18px;color:#E53333;"><span style="font-size:18px;color:#E53333;"><strong><span style="font-size:14px;line-height:1.5;background-color:#FFE500;">热烈庆祝Besttest与百度质量部、去哪网测试部、搜狗、奇虎360、蚂蚁金服、阿里云达成内部推荐合作渠道。</span></strong><br />
+</span></span></span></p></div>
+</div>
+<style>#block219{}#block219 .panel-heading{}#block219 .panel-body{padding-top:px !important;}#block219 .panel-body{padding-right:px !important;}#block219 .panel-body{padding-bottom:px !important;}#block219 .panel-body{padding-left:px !important;}</style></div></div>
+  <div class='row focus-middle' data-default-grid='4'><div class='col-md-4' data-grid='4'><div id="block10" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong>招生信息</strong>
+      </div>
+  <div class='panel-body'><p><span style="font-size:12px;line-height:18.857141494751px;color:#E53333;background-color:#FFFFFF;"></span></p>
+<p style="white-space:normal;"><strong><span style="color:#E53333;">招生信息：</span></strong></p>
+<p><span style="font-size:12px;"><span style="white-space:normal;font-size:12px;"><span style="color:#E53333;"><a href="/page/3.html" target="_blank"><span style="color:#E53333;"><span style="color:#E53333;"><strong>安大叔性能周六班</strong></span></span></a><span><span style="background-color:#FFFFFF;font-size:13.3333px;color:#E53333;"><strong><a href="/page/3.html" target="_blank" style="background-color:#FFFFFF;font-size:13.3333px;"><span style="color:#E53333;">9</span></a><span style="color:#E53333;">.</span><span style="color:#E53333;">1</span></strong></span><strong><span style="color:#E53333;">开课</span></strong></span></span></span><span style="white-space:normal;">，接受现场与网络名额预订！</span><br />
+</span></p>
+<p><span style="font-size:12px;"><span style="white-space:normal;"><span style="font-size:12px;white-space:normal;color:#E53333;"><a href="/page/47.html" target="_blank"><span style="color:#E53333;"><span style="font-weight:700;">Python自动化周日班10月底开课</span></span></a></span><span style="font-size:12px;white-space:normal;">，接受现场与网络名额预定！</span></span></span></p>
+<p><span style="font-size:12px;line-height:18.8571px;"><span style="font-size:12px;white-space:normal;line-height:18.8571px;"><span style="line-height:18.8571px;"><span style="font-size:12px;white-space:normal;"><span style="font-size:12px;white-space:normal;line-height:18.8571px;"><br />
+</span></span></span></span></span></p>
+<p><span style="font-size:12px;line-height:18.8571px;"><span style="font-size:12px;white-space:normal;line-height:18.8571px;"><span style="line-height:18.8571px;"><span style="font-size:12px;white-space:normal;"><span style="font-size:12px;white-space:normal;line-height:18.8571px;"><span style="line-height:18.8571px;">具体咨询客服QQ:475566024、1473732204。</span></span></span></span></span></span></p>
+<p><br />
+</p>
+<p><span style="font-size:14px;color:#E53333;"><strong>学员就业信息：</strong></span></p>
+<p><span style="font-size:12px;">汉库克、白胡子班陆续就业中...</span></p>
+<p><span style="font-size:12px;">蝙蝠侠班学员基本全部就业，恭喜耕哥拿到40W年薪offer。</span></p>
+<p><span style="font-size:12px;">蜘蛛侠班学员基本全部就业，产生了年薪32W的明星学员。</span></p>
+<p><span style="font-size:12px;">旭日班、晨星班、<span style="font-size:12px;line-height:18.8571px;white-space:normal;">吸血鬼班</span>、<span style="font-size:12px;line-height:18.8571px;white-space:normal;">钢铁侠班</span>、<span style="font-size:12px;line-height:18.8571px;white-space:normal;">米老鼠班</span>、<span style="font-size:12px;white-space:normal;line-height:18.8571px;"><span style="line-height:18.8571px;">索隆班、路飞班、</span>乔巴班、</span><span style="font-size:12px;white-space:normal;">超人班</span>、<span style="font-size:12px;white-space:normal;">山治班、乌索普班、<span style="font-size:12px;white-space:normal;">娜美班、</span><span style="font-size:12px;white-space:normal;">布鲁克班、罗宾班</span>学员</span>基本全部就业</span><span style="font-size:12px;">。</span></p></div>
+</div>
+<style>#block10{}#block10 .panel-heading{}#block10 .panel-body{padding-top:px !important;}#block10 .panel-body{padding-right:px !important;}#block10 .panel-body{padding-bottom:px !important;}#block10 .panel-body{padding-left:px !important;}</style></div><div class='col-md-4' data-grid='4'><div id="block1" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong><i class='icon-list-ul'></i> 学习资料</strong>
+        <div class='pull-right'><a href='http://www.besttest.cn/article/c15.html' >更多</a>
+</div>
+      </div>
+  <div class='panel-body'><p><a href="/article/45.html" target="_blank" style="background-color:#FFFFFF;font-size:12px;line-height:1.57143;"><span style="font-size:12px;">HBase一次客户端读写异常解读分析与优化全过程（干货）</span></a></p>
+<p><span style="line-height:1.57142857;font-size:12px;background-color:#FFFFFF;"><a href="/article/39.html" target="_blank" style="line-height:1.57142857;background-color:#FFFFFF;"><span style="color:#333333;font-size:12px;">Android性能测试－－内存</span></a></span></p>
+<p><a href="/article/42.html" target="_blank"><span style="font-size:12px;color:#333333;">mongodb三种存储引擎高并发更新性能专题测试</span><span style="font-size:14px;"></span></a></p>
+<p><a href="/article/41.html" target="_blank"><span style="font-size:12px;color:#333333;">一次项目实践中DBCP数据库连接池性能优化</span></a></p>
+<p><span style="font-size:12px;color:#333333;"><a href="/article/40.html" target="_blank">初识中间件之消息队列</a></span></p>
+<p><span style="font-size:12px;color:#333333;"><a target="_blank" href="/article/23.html">JQuery高性能最佳实践</a></span></p>
+<p><a href="/www/article/19.html" target="_blank"></a></p>
+<p><a href="/article/18.html" target="_blank"><span style="font-size:12px;color:#333333;">Web十大安全隐患之SQL注入</span></a></p>
+<p><a target="_blank" href="/article/16.html"><span style="font-size:12px;color:#333333;">Web</span><span style="font-size:12px;color:#333333;">前端性能测试之日志分析</span></a></p>
+<p><a target="_blank" href="/article/15.html" style="line-height:1.57143;background-color:#FFFFFF;"><span style="font-size:12px;color:#333333;">LR多场景串行执行以及定时执行脚本</span></a></p>
+<p><a target="_blank" href="/article/25.html"><span style="font-size:12px;color:#333333;">聊一下测试工程师的招聘与面试（内附大叔感想</span><span style="color:#003399;"></span><span style="font-size:12px;color:#333333;">）</span></a></p>
+<p><a target="_blank" href="/article/21.html"><span style="font-size:12px;color:#333333;">员工价值——如何体现自己</span><span style="font-size:12px;color:#333333;">价值，如何被自己的领导认可</span></a></p>
+<p><span style="font-size:12px;"><span style="color:#333333;"><a href="/article/44.html" target="_blank"><span style="color:#333333;font-size:12px;">JVM内存GC的骗局——JVM不抛出OOM但内存已经泄露</span></a></span></span><span style="font-size:12px;"></span></p>
+<p><span style="font-size:12px;"><span style="color:#333333;font-size:12px;"><a href="/article/46.html" target="_blank">Jmeter与Jenkins结合进行Web接口测试</a></span></span></p>
+<p><br />
+</p>
+<p><br />
+</p>
+<p><br />
+</p></div>
+</div>
+<style>#block1{}#block1 .panel-heading{}#block1 .panel-body{padding-top:px !important;}#block1 .panel-body{padding-right:px !important;}#block1 .panel-body{padding-bottom:px !important;}#block1 .panel-body{padding-left:px !important;}</style></div><div class='col-md-4' data-grid='4'><div id="block221" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong>联系我们</strong>
+      </div>
+  <div class='panel-body'><p style="margin-bottom:10px;padding:0px;color:#444444;font-family:&quot;line-height:21.5385px;white-space:normal;background-color:#EDEFF1;"><strong><span style="color:#000000;font-size:12px;">1、教室地址</span></strong><span style="color:#000000;font-size:12px;">：<span style="color:#333333;font-family:微软雅黑, Tahoma, 宋体;line-height:22px;white-space:normal;">天通中苑二区41号楼A单元2002</span></span><span style="font-size:12px;color:#333333;"><span style="color:#333333;font-family:微软雅黑, Tahoma, 宋体;line-height:22px;white-space:normal;"></span></span></p>
+<p style="margin-bottom:10px;padding:0px;color:#444444;font-family:&quot;line-height:21.5385px;white-space:normal;background-color:#EDEFF1;"><strong><span style="color:#000000;font-size:12px;">2、联系方式</span></strong><span style="font-size:12px;">：</span><span style="font-size:12px;">18610434650</span></p>
+<p style="margin-bottom:10px;padding:0px;color:#444444;font-family:&quot;line-height:21.5385px;white-space:normal;background-color:#EDEFF1;"><strong style="line-height:1.57143;"><span style="color:#000000;font-size:12px;">3、</span></strong><span style="font-weight:700;font-size:12px;color:#000000;font-family:&quot;">招生老师ＱＱ：</span></p>
+<p style="margin-bottom:10px;padding:0px;color:#444444;font-family:&quot;line-height:21.5385px;white-space:normal;background-color:#EDEFF1;"><strong style="line-height:1.57143;"><strong style="line-height:1.57143;"><span style="color:#000000;font-size:12px;"></span></strong><span style="color:#000000;font-size:12px;"></span></strong></p>
+<p style="white-space:normal;"><strong><span style="font-size:12px;">cc</span></strong><span style="font-size:12px;">:475566024 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+<p style="white-space:normal;"><strong><span style="font-size:12px;">安大叔</span></strong><span style="font-size:12px;">:1473732204 &nbsp; &nbsp;&nbsp;</span></p>
+<p style="white-space:normal;"><span style="font-size:12px;"><br />
+</span></p>
+<p style="margin-bottom:10px;padding:0px;color:#444444;font-family:&quot;line-height:21.5385px;white-space:normal;background-color:#EDEFF1;"><strong style="line-height:1.57143;"><span style="color:#000000;font-size:12px;">4、QQ群交流：</span></strong></p>
+<p><span style="color:#000000;font-size:12px;">5000人LR+Jmeter性能测试</span><span style="font-size:12px;">：</span><span style="color:#FFFFFF;font-size:12px;"> <span style="color:#000000;font-size:12px;">435092293</span></span><span style="color:#E53333;font-size:12px;"><strong>（</strong></span><span style="color:#E53333;font-size:12px;"><strong>hot~</strong></span><strong><span style="color:#E53333;font-size:12px;">）</span></strong></p>
+<p><span style="color:#000000;font-size:12px;">自动化测试： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;37753989</span></p>
+<p><span style="color:#000000;"><span style="color:#000000;white-space:normal;font-size:12px;">安全测试： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;82280498</span><br />
+</span></p>
+<p><span style="color:#000000;font-size:12px;">招聘求职： &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;311825413</span></p>
+<p><span style="color:#E53333;"><span style="color:#000000;font-size:12px;"><span style="color:#FFFFFF;font-size:12px;background-color:#000000;"><span style="color:#000000;font-size:12px;background-color:#FFFFFF;">广州深圳性能测试群： </span></span></span><span style="color:#000000;"><span style="color:#000000;font-size:12px;">317538798</span></span></span></p></div>
+</div>
+<style>#block221{}#block221 .panel-heading{}#block221 .panel-body{padding-top:px !important;}#block221 .panel-body{padding-right:px !important;}#block221 .panel-body{padding-bottom:px !important;}#block221 .panel-body{padding-left:px !important;}</style></div><div class='col-md-12' data-grid='12'><div id="block214" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong>视频中心</strong>
+        <div class='pull-right'><a href='http://www.besttest.cn/page/6.html' >更多</a>
+</div>
+      </div>
+  <div class='panel-body'><p><span style="font-size:10.5pt;font-family:Calibri;"></span><span style="font-size:10.5pt;font-family:Calibri;"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;自己动手写自动化接口测试框架</strong></span><strong> &nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:10.5pt;font-family:Calibri;"></span><span style="font-size:10.5pt;font-family:宋体;"></span><span style="font-size:10.5pt;font-family:Calibri;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>linux</strong></span><span style="font-size:10.5pt;font-family:宋体;"><strong>操作系统监控分析调优系列</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:10.5pt;font-family:Calibri;"></span><span style="font-size:10.5pt;font-family:宋体;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span style="font-size:10.5pt;font-family:Calibri;"><strong>Jmeter</strong></span><span style="font-size:10.5pt;font-family:宋体;"><strong>第一课</strong></span></span></p>
+<p><embed src="http://www.tudou.com/v/mEV5I0_As-8/&rpid=363338438&resourceId=363338438_04_05_99/v.swf" type="application/x-shockwave-flash" width="300" height="200" quality="high" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<embed src="http://www.tudou.com/v/humX-QCQaCI/&resourceId=0_04_05_99/v.swf" type="application/x-shockwave-flash" width="300" height="200" quality="high" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <embed src="http://www.tudou.com/v/BS1FAS6thPM/&resourceId=0_04_05_99/v.swf" type="application/x-shockwave-flash" width="300" height="200" quality="high" /></p>
+<p><span style="font-size:10.5pt;font-family:Calibri;"></span></p>
+<p><br />
+</p></div>
+</div>
+<style>#block214{}#block214 .panel-heading{}#block214 .panel-body{padding-top:px !important;}#block214 .panel-body{padding-right:px !important;}#block214 .panel-body{padding-bottom:px !important;}#block214 .panel-body{padding-left:px !important;}</style></div><div class='col-md-12' data-grid='12'><div id="block215" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong><i class='icon'><i class='icon-link'></i> </i>友情链接</strong>
+    <div class='pull-right'>
+            <a href='/links/' >更多</a>
+          </div>
+  </div>
+  <div class='panel-body'><p style="text-indent:2em;"><span><a href="http://www.cnblogs.com/andashu/" target="_blank">安大叔公众号博客</a> &nbsp; &nbsp;</span><a href="http://jacksonren.blog.51cto.com" target="_blank">风落技术博客&nbsp;&nbsp;</a><a href="http://www.nnzhp.cn" target="_blank">&nbsp; &nbsp;牛牛杂货铺 &nbsp;&nbsp;</a>
+	<a href="http://bbs.besttest.cn" target="_blank">&nbsp; &nbsp;BestTest问答系统 &nbsp;&nbsp;</a>
+	<a href="http://www.imdsx.cn" target="_blank">&nbsp; &nbsp;大师兄技术博客 &nbsp;&nbsp;</a>
+</p>
+</div>
+</div>
+<style>#block215{}#block215 .panel-heading{}</style></div><div class='col-md-12' data-grid='12'><div id="block218" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong>合作企业</strong>
+      </div>
+  <div class='panel-body'><img title="" src="/data/upload/201507/f_a0bbae17de4aeb9887118c9f2a5cbd5d.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_11f379cbee4238f48d33322ee36efe07.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_07c30144c0f961eee23161b40d72e97a.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_6b12eec87214e653da94e268af2dff68.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_5b278b0b554583260121b085c066e81d.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_8492cb89009d2371911a4cfb3092fcdb.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_53f779112b91f8d1afdfbd304da0826b.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_a74776465a9946303177c3d5536ec456.png" alt="" align="" height="32" width="50" /> &nbsp; &nbsp; &nbsp; <img title="" src="/data/upload/201507/f_a2126539ce1acffa7c3e586d0be926aa.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_73e35558ed5b4ac4e8f3fbdc05119453.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_33ee20d226d4be2a4d5af1421c1fb336.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_d44dec8b9ee0cceb89b54c15fe1fe959.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_0800b60a5f593b5e5a415df51f0057e9.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_71bddfa3d84d7f59417716b304b2da41.png" alt="" align="" height="32" width="50" /> <img title="" src="/data/upload/201507/f_21735a09c7bc09d199561cc8fdf358a6.png" alt="" align="" height="32" width="50" /> <img title="" src="/data/upload/201507/f_8f2a35e9b4c0e7b19318a6701b9bb3dd.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_a2b959289976ca2b3e4ed983c8ac76d2.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_ec6343dd949902484de01b20f970fcff.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_fb689606f25f29da56646a97c4cd61de.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_62e693669eb12586f359ca98cf9fefca.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_fdbdb8041d1a6b6d2b81b27359bc8b67.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_66517725cf48fba236f0863faa69e63f.png" alt="" align="" height="32" width="50" /> &nbsp; &nbsp; &nbsp;&nbsp; <img title="" src="/data/upload/201507/f_9ba9ae4ed846aa1abf8d28ab6d813f41.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_b7e6e5167deb93fc5f70bdaf8305532a.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_443582df8a5ef9600d42d18af8e9b77f.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_a1ac2770c204d69fcff7076e722a8425.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_f6115156744c95270e1159f04e50f54b.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_34daf2b6c74699f59b2f47d47239c4a7.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_77e27aadda9f953ea5453bbbca57ec27.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp; <img title="" src="/data/upload/201507/f_04b46e2e5a183f6ce9f7732fbb68bbc9.png" alt="" align="" height="32" width="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /></div>
+</div>
+<style>#block218{background-color:#FFFFFF !important;}#block218 .panel-heading{}#block218 .panel-body{padding-top:px !important;}#block218 .panel-body{padding-right:px !important;}#block218 .panel-body{padding-bottom:px !important;}#block218 .panel-body{padding-left:px !important;}</style></div><div class='col-md-12' data-grid='12'><div id="block227" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong>学员风采</strong>
+      </div>
+  <div class='panel-body'><p><img src="/data/upload/201710/f_36b1c59ecf3b8ff5b0acaf2ea42bafe0.jpg" alt="" width="266" height="200" title="" align="" /><img src="/data/upload/201710/f_dbccbc9c0cf67a7c1bf65e1f74cb5f87.jpg" alt="" width="266" height="200" title="" align="" /><img src="/data/upload/201710/f_edcdb4430ff8c70df8a02306671be326.jpg" alt="" width="267" height="200" title="" align="" /><img src="/data/upload/201710/f_93b5839c7832295c517b7ed023188584.jpg" alt="" width="267" height="200" title="" align="" /></p></div>
+</div>
+<style>#block227{}#block227 .panel-heading{}#block227 .panel-body{padding-top:px !important;}#block227 .panel-body{padding-right:px !important;}#block227 .panel-body{padding-bottom:px !important;}#block227 .panel-body{padding-left:px !important;}</style></div></div>
+  <div class='row focus-bottom' data-default-grid='6'><div class='col-md-4 col-auto'><div id="floatTools" class="rides-cs" style="height:246px;">
+  <div class="floatL">
+  	<a style="display:block" id="aFloatTools_Show" class="btnOpen" title="查看在线客服" style="top:20px" href="javascript:void(0);">展开</a>
+  	<a style="display:none" id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" style="top:20px" href="javascript:void(0);">收缩</a>
+  </div>
+  <div id="divFloatToolsView" class="floatR" style="display: none;height:237px;width: 140px;">
+    <div class="cn">
+      <h3 class="titZx">BestTest在线客服</h3>
+      <ul>
+        <li><span>客服:cc</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=475566024&site=qq&menu=yes"><img border="0" src="/data/upload/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+        <li><span>安大叔</span> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1473732204&site=qq&menu=yes"><img border="0" src="/data/upload/online.png" alt="点击这里给我发消息" title="点击这里给我发消息"/></a> </li>
+        <li>
+            官方微信:andashu1006
+        </li>
+        <li style="border:none;"><span>咨询热线:18610434650</span> </li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+  $(function(){
+    $("#aFloatTools_Show").click(function(){
+      $('#divFloatToolsView').animate({width:'show',opacity:'show'},100,function(){$('#divFloatToolsView').show();});
+      $('#aFloatTools_Show').hide();
+      $('#aFloatTools_Hide').show();        
+    });
+    $("#aFloatTools_Hide").click(function(){
+      $('#divFloatToolsView').animate({width:'hide', opacity:'hide'},100,function(){$('#divFloatToolsView').hide();});
+      $('#aFloatTools_Show').show();
+      $('#aFloatTools_Hide').hide();  
+    });
+  });
+</script>
+  </div>
+</div><style>#block217{}#block217 .panel-heading{}</style></div></div>
+</div>
+  <div class='row all-bottom'><div class='col-md-12'><div class='col-md-4 col-auto'><div id="block13" class='panel panel-block '>
+  <div class='panel-heading'>
+    <strong>公司简介</strong>
+        <div class='pull-right'><a href='/company/' >更多</a>
+</div>
+      </div>
+  <div class='panel-body'>
+    <div class='article-content'><span>Besttest，全称北京百测技术咨询有限公司，是目前中国唯一一家专业高端软件培训机构，长年致力于测试领域在职短期提升、企业内训、技术推广、免费公开课等多种服务方式，持续为软件测试工程师提供优秀的学习平台。</span></div>
+  </div>
+</div>
+<style>#block13{}#block13 .panel-heading{}</style></div></div></div>
+  </div></div>  <footer id='footer' class='clearfix'>
+    <div class='wrapper'>
+      <div id='footNav'>
+        <a href='/sitemap/' class='text-link'><i class='icon-sitemap'></i> 站点地图</a>
+      </div>
+      <span id='copyright'>
+        &copy; 2012-2018 北京百测技术咨询有限公司&nbsp;&nbsp;      </span>
+      <span id='icpInfo'>
+                      </span>
+      <div id='powerby'>
+        <a href='http://www.chanzhi.org/?v=4.2.1' target='_blank' title='蝉知门户，微网站首选！'><span class='icon icon-chanzhi'><i class='ic1'></i><i class='ic2'></i><i class='ic3'></i><i class='ic4'></i><i class='ic5'></i><i class='ic6'></i><i class='ic7'></i></span> <span class='name'>蝉知</span>4.2.1</a>      </div>
+    </div>
+  </footer>
+<script language='Javascript'>$(document).ready(function()
+{          
+    // add "index" class to the body element.
+    $('body').addClass('index');
+
+    $('.nav-system-home:first').addClass('active');
+})
+
+</script>
+<a href='#' id='go2top' class='icon-arrow-up' data-toggle='tooltip' title='返<br/>回<br/>顶<br/>部'></a>
+</div><div id='rightDocker' class='hidden-xs'>
+    <button id='rightDockerBtn' class='btn' data-toggle="popover" data-placement="left" data-target='$next'><i class='icon-qrcode'></i></button>
+    <div class='popover fade'>
+    <div class='arrow'></div>
+    <div class='popover-content docker-right'>
+      <table class='table table-borderless'>
+        <tr>
+                              <td>
+            <div class='heading'><i class='icon-mobile-phone'></i> 移动访问</div>
+            <img src='javascript:;' width='200' height='200' data-src='/misc-qrcode.html' />
+          </td>
+                  </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class='hide'><script src="https://hm.baidu.com/hm.js?1cd20b967350c1716be06cc96a24cc50"></script>
+<style>#block224{}#block224 .panel-heading{}</style></div>
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta property="qc:admins" content="5340606616130176375" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>大师兄 - 一个伪80后的测试之路</title>							
+															<link rel="icon" href="http://www.imdsx.cn:80/wp-content/themes/QQ/images/favicon.ico">
+				<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='crayon-css'  href='http://www.imdsx.cn:80/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-sublime-text-css'  href='http://www.imdsx.cn:80/wp-content/plugins/crayon-syntax-highlighter/themes/sublime-text/sublime-text.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-ubuntu-mono-css'  href='http://www.imdsx.cn:80/wp-content/plugins/crayon-syntax-highlighter/fonts/ubuntu-mono.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='bcss-css'  href='http://www.imdsx.cn:80/wp-content/themes/QQ/css/b.css?ver=3.3.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='qq-style-css'  href='http://www.imdsx.cn:80/wp-content/themes/QQ/style.css?ver=4.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/jquery.min.js?ver=2.0.0'></script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/bootstrap.min.js?ver=3.3.0'></script>
+<link rel='https://api.w.org/' href='http://www.imdsx.cn:80/index.php/wp-json/' />
+<meta name="keywords" content="大师兄,软件测试,自动化测试,python">
+<meta name="description" content="大师兄,软件测试,自动化测试,python,ui自动化测试,app自动化测试,大师兄技术博客">
+<link rel="icon" href="http://www.imdsx.cn:80/wp-content/uploads/2016/12/cropped-logo-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://www.imdsx.cn:80/wp-content/uploads/2016/12/cropped-logo-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.imdsx.cn:80/wp-content/uploads/2016/12/cropped-logo-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://www.imdsx.cn:80/wp-content/uploads/2016/12/cropped-logo-270x270.jpg" />
+		<script "text/javascript">var themeurl="http://www.imdsx.cn:80/wp-content/themes/QQ",homeurl="http://www.imdsx.cn:80";</script>
+		<!--[if lt IE 9]><script src="http://www.imdsx.cn:80/wp-content/themes/QQ/js/html5.js"></script><![endif]-->
+		
+	</head>
+
+	<body>
+<div id="m-nav" class="m-nav">
+	<div class="m-nav-all">
+		<div class="m-logo-url">
+			<img src="http://www.imdsx.cn:80/wp-content/themes/QQ/images/logo.jpg">
+			<h3>大师兄</h3>
+			<span data-sign="0" class="user-login btn btn-danger"><i class="fa fa-user"></i>登录</span>&nbsp;<span data-sign="1" class="user-reg btn btn-success"><i class="fa fa-user-plus"></i>注册</span>
+		</div>
+		<ul class="nav">
+			<li id="menu-item-414" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-414"><a href="http://www.imdsx.cn">首页</a></li>
+<li id="menu-item-263" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-263"><a href="http://www.imdsx.cn:80/index.php/category/linxu/">Linux</a></li>
+<li id="menu-item-262" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-262"><a href="http://www.imdsx.cn:80/index.php/category/python/">Python</a></li>
+<li id="menu-item-264" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-264"><a href="http://www.imdsx.cn:80/index.php/category/django/">Django</a></li>
+<li id="menu-item-630" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-630"><a href="http://www.imdsx.cn:80/index.php/category/selenium/">UI自动化</a></li>
+<li id="menu-item-884" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-884"><a href="http://www.imdsx.cn:80/index.php/category/withdsx/">跟大师兄学测试</a></li>
+<li id="menu-item-371" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-371"><a href="http://www.imdsx.cn:80/index.php/category/wsdsx/">我是大师兄</a></li>
+<li id="menu-item-150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="http://www.imdsx.cn:80/index.php/nygsm/">友情链接</a></li>
+		</ul>
+	</div>
+</div>
+<div class="navbar">
+  <div class="container">
+	<div class="navbar-header-logo">
+					<img src="http://www.imdsx.cn:80/wp-content/themes/QQ/images/logo.jpg">
+			</div>
+    <div class="navbar-header">
+      <a class="navbar-brand hidden-sm">大师兄</a>
+    </div>
+			<div class="navbar-header-login">
+			<ul>
+				<li style="float:right; padding: 20px 15px;">
+					<a href="javascript:" class="user-login"><i class="fa fa-user"></i>登录</a>
+				</li>
+			</ul>
+		</div>
+	    <div class="navbar-collapse collapse" role="navigation">
+      <ul class="main-nav navbar-qq nav-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-414"><a href="http://www.imdsx.cn">首页</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-263"><a href="http://www.imdsx.cn:80/index.php/category/linxu/">Linux</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-262"><a href="http://www.imdsx.cn:80/index.php/category/python/">Python</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-264"><a href="http://www.imdsx.cn:80/index.php/category/django/">Django</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-630"><a href="http://www.imdsx.cn:80/index.php/category/selenium/">UI自动化</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-884"><a href="http://www.imdsx.cn:80/index.php/category/withdsx/">跟大师兄学测试</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-371"><a href="http://www.imdsx.cn:80/index.php/category/wsdsx/">我是大师兄</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-150"><a href="http://www.imdsx.cn:80/index.php/nygsm/">友情链接</a></li>
+	  </ul>
+    </div>
+  </div>
+</div>
+<form role="search" method="get" class="m-search" id="search-form" action="http://www.imdsx.cn:80/">
+    <div class="search-form">
+    	<span id="search-form-close">&times;</span>
+        <input placeholder="Search for" type="text" value="" name="s" id="search-input-s" />
+        <input type="submit" class="webFont" id="searchsubmit" value="搜索" />
+    </div>
+</form>
+<div id="m-header" class="m-header">
+	<div id="showLeftPush" class="left m-header-button"></div>
+	<h1><a href="http://www.imdsx.cn:80">大师兄</a></h1>
+	<div id="search-trigger" style="font-size: 18px;" class="right m-header-search"></div>
+</div><div id="m-container">
+									<div class="container">
+		<div class="smaller-images"></div>	</div>
+	<div class="container containerall">
+	<div class="main">
+		<div id="content" class="index-single">
+			<div class="qqfengget">
+																				
+	
+<article id="post-1280" class="post-1280 post type-post status-publish format-standard has-post-thumbnail hentry category-python category-uncategorized" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2018/11/07/python-iterable/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc.png" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2018/11/07/python-iterable/" title="Python-迭代器" class="post-title">Python-迭代器</a>
+				<small class="text-muted" title="0张图片"><span class="fa fa-photo"></span>0</small>
+			</h2>
+			<div class="posts-text">
+			迭代器
+迭代是访问集合元素的一种方式。迭代器是一个可以记住遍历的位置的对象。迭代器对象从集合的第一个元素开始访...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2018/11/07</li>
+				<li class="post-views"><i class="fa fa-eye"></i>24</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1267" class="post-1267 post type-post status-publish format-standard has-post-thumbnail hentry category-python" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2018/11/06/python-socket-tcp/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc.png" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2018/11/06/python-socket-tcp/" title="Python-Socket-Tcp-网络编程" class="post-title">Python-Socket-Tcp-网络编程</a>
+				<small class="text-muted" title="3张图片"><span class="fa fa-photo"></span>3</small>
+			</h2>
+			<div class="posts-text">
+			TCP简介
+TCP介绍
+TCP协议，传输控制协议（英语：Transmission Control Protoc...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2018/11/06</li>
+				<li class="post-views"><i class="fa fa-eye"></i>24</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1258" class="post-1258 post type-post status-publish format-standard hentry category-java" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2018/08/13/java-1/">
+			<span class="item"><span class="thumb-span">
+															<img data-src="http://test.nnzhp.cn:80/dsx/wp-content/themes/QQ/images/thumbnail.png" class="thumb">												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2018/08/13/java-1/" title="Java基础-函数" class="post-title">Java基础-函数</a>
+				<small class="text-muted" title="0张图片"><span class="fa fa-photo"></span>0</small>
+			</h2>
+			<div class="posts-text">
+			函数的格式
+修饰符 返回值类型 函数名（参数类型 形式参数1,参数类型 形式参数2）
+{
+执行语句
+retur...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2018/08/13</li>
+				<li class="post-views"><i class="fa fa-eye"></i>224</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1237" class="post-1237 post type-post status-publish format-standard hentry category-uncategorized" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2018/06/28/%e8%bf%9b%e7%a8%8b%e8%ae%a8%e8%ae%ba%e4%b9%8bmultiprocessing/">
+			<span class="item"><span class="thumb-span">
+															<img data-src="http://test.nnzhp.cn:80/dsx/wp-content/themes/QQ/images/thumbnail.png" class="thumb">												</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2018/06/28/%e8%bf%9b%e7%a8%8b%e8%ae%a8%e8%ae%ba%e4%b9%8bmultiprocessing/" title="进程讨论之multiprocessing" class="post-title">进程讨论之multiprocessing</a>
+				<small class="text-muted" title="0张图片"><span class="fa fa-photo"></span>0</small>
+			</h2>
+			<div class="posts-text">
+			创建进程
+进程锁
+&nbsp;
+...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2018/06/28</li>
+				<li class="post-views"><i class="fa fa-eye"></i>0</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1187" class="post-1187 post type-post status-publish format-standard post-password-required hentry category-selenium" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2017/12/10/located/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2017/09/a.jpg" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2017/12/10/located/" title="密码保护：Appium定位方式总结" class="post-title">密码保护：Appium定位方式总结</a>
+				<small class="text-muted" title="0张图片"><span class="fa fa-photo"></span>0</small>
+			</h2>
+			<div class="posts-text">
+			密码保护文章，暂无摘要！			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2017/12/10</li>
+				<li class="post-views"><i class="fa fa-eye"></i>1322</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>1</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1170" class="post-1170 post type-post status-publish format-standard post-password-required hentry category-selenium" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2017/12/04/select/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2017/07/driver-e1501134127655.png" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2017/12/04/select/" title="密码保护：下拉框处理（select）" class="post-title">密码保护：下拉框处理（select）</a>
+				<small class="text-muted" title="5张图片"><span class="fa fa-photo"></span>5</small>
+			</h2>
+			<div class="posts-text">
+			密码保护文章，暂无摘要！			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2017/12/04</li>
+				<li class="post-views"><i class="fa fa-eye"></i>786</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1123" class="post-1123 post type-post status-publish format-standard post-password-required hentry category-selenium" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2017/11/22/click/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2017/07/driver-e1501134127655.png" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2017/11/22/click/" title="密码保护：神秘的指令链（Action Chains）" class="post-title">密码保护：神秘的指令链（Action Chains）</a>
+				<small class="text-muted" title="8张图片"><span class="fa fa-photo"></span>8</small>
+			</h2>
+			<div class="posts-text">
+			密码保护文章，暂无摘要！			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2017/11/22</li>
+				<li class="post-views"><i class="fa fa-eye"></i>687</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1080" class="post-1080 post type-post status-publish format-standard post-password-required hentry category-selenium" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2017/11/15/jenkins-uirecorder/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2017/11/1510624406_833820-e1510624527994.png" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2017/11/15/jenkins-uirecorder/" title="密码保护：解锁UI自动化新姿势-UI Recorder集成的那些事" class="post-title">密码保护：解锁UI自动化新姿势-UI Recorder集成的那些事</a>
+				<small class="text-muted" title="10张图片"><span class="fa fa-photo"></span>10</small>
+			</h2>
+			<div class="posts-text">
+			密码保护文章，暂无摘要！			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2017/11/15</li>
+				<li class="post-views"><i class="fa fa-eye"></i>842</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1035" class="post-1035 post type-post status-publish format-standard has-post-thumbnail hentry category-selenium" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2017/11/13/mac-appium/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2017/09/a.jpg" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2017/11/13/mac-appium/" title="移动端自动化测试-Mac-IOS-Appium环境搭建" class="post-title">移动端自动化测试-Mac-IOS-Appium环境搭建</a>
+				<small class="text-muted" title="37张图片"><span class="fa fa-photo"></span>37</small>
+			</h2>
+			<div class="posts-text">
+			第一步
+安装JDK，本机如果带有1.7及以上版本的，则可忽略此安装步骤。
+百度下载JDK，并配置环境变量 vi...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2017/11/13</li>
+				<li class="post-views"><i class="fa fa-eye"></i>1582</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>1</li>
+			</ul>
+		</div>
+</article>
+
+								
+	
+<article id="post-1011" class="post-1011 post type-post status-publish format-standard has-post-thumbnail hentry category-selenium" >
+		<div class="focus">
+			<a href="http://www.imdsx.cn:80/index.php/2017/11/10/uirecorder/">
+			<span class="item"><span class="thumb-span">
+									<img data-src="http://www.imdsx.cn:80/wp-content/uploads/2017/11/1510624406_833820-e1510624527994.png" class="thumb">							</span></span>
+			</a>
+		</div>
+		<div class="note">
+			<h2>
+				<a href="http://www.imdsx.cn:80/index.php/2017/11/10/uirecorder/" title="解锁UI自动化新姿势-UI Recorder" class="post-title">解锁UI自动化新姿势-UI Recorder</a>
+				<small class="text-muted" title="12张图片"><span class="fa fa-photo"></span>12</small>
+			</h2>
+			<div class="posts-text">
+			现在的互联网公司，普遍在尝试并执行敏捷开发模式，那么必然要涉及到频繁的更新迭代，在每次更新迭代时，老功能的回归...			</div>
+			<ul class="post-muted">
+				<li class="post-author"><div class="avatar"><img src="http://www.imdsx.cn:80/wp-content/uploads/2017/01/logo-1-150x150.jpg" width="96" height="96" alt="大师兄" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo" /></div><a href="http://www.imdsx.cn:80/index.php/author/houyafan/" target="_blank">大师兄</a>  2017/11/10</li>
+				<li class="post-views"><i class="fa fa-eye"></i>1892</li>
+				<li class="post-comments"><i class="fa fa-comments-o"></i>0</li>
+			</ul>
+		</div>
+</article>
+
+											</div>
+		</div>
+		<div class="paging">
+			<a id='text-indent' class='current'>1</a> <a id='text-indent' href='http://www.imdsx.cn:80/index.php/page/2/' title='第 2 页'>2</a> <a id='text-indent' href='http://www.imdsx.cn:80/index.php/page/3/' title='第 3 页'>3</a> <a id="text-indent">...</a><a id='text-indent' href='http://www.imdsx.cn:80/index.php/page/2/' title='下一页'>›</a> <a id='text-indent' href='http://www.imdsx.cn:80/index.php/page/5/' title='最后页'>»</a> 		</div>
+	</div>
+	<div class="sidebar">
+		<section class="widget widget_ui_posts"><h3 class="widget_tit">最新发布</h3>
+	  <ul class="nopic">
+						<li>
+			<a href="http://www.imdsx.cn:80/index.php/2018/11/07/python-iterable/" class="thumbnails">
+									<img width="764" height="621" src="http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc.png 764w, http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc-300x244.png 300w" sizes="(max-width: 764px) 100vw, 764px" />							</a>
+			<h3>
+				<a href="http://www.imdsx.cn:80/index.php/2018/11/07/python-iterable/">
+					Python-迭代器				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.imdsx.cn:80/index.php/2018/11/06/python-socket-tcp/" class="thumbnails">
+									<img width="764" height="621" src="http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc.png 764w, http://www.imdsx.cn:80/wp-content/uploads/2016/12/pythonc-300x244.png 300w" sizes="(max-width: 764px) 100vw, 764px" />							</a>
+			<h3>
+				<a href="http://www.imdsx.cn:80/index.php/2018/11/06/python-socket-tcp/">
+					Python-Socket-Tcp-网络编程				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.imdsx.cn:80/index.php/2018/08/13/java-1/" class="thumbnails">
+															<img src="http://www.imdsx.cn:80/wp-content/themes/QQ/images/thumbnail.png" />
+												</a>
+			<h3>
+				<a href="http://www.imdsx.cn:80/index.php/2018/08/13/java-1/">
+					Java基础-函数				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.imdsx.cn:80/index.php/2018/06/28/%e8%bf%9b%e7%a8%8b%e8%ae%a8%e8%ae%ba%e4%b9%8bmultiprocessing/" class="thumbnails">
+															<img src="http://www.imdsx.cn:80/wp-content/themes/QQ/images/thumbnail.png" />
+												</a>
+			<h3>
+				<a href="http://www.imdsx.cn:80/index.php/2018/06/28/%e8%bf%9b%e7%a8%8b%e8%ae%a8%e8%ae%ba%e4%b9%8bmultiprocessing/">
+					进程讨论之multiprocessing				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.imdsx.cn:80/index.php/2017/12/10/located/" class="thumbnails">
+									<img width="589" height="338" src="http://www.imdsx.cn:80/wp-content/uploads/2017/09/a.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://www.imdsx.cn:80/wp-content/uploads/2017/09/a.jpg 589w, http://www.imdsx.cn:80/wp-content/uploads/2017/09/a-300x172.jpg 300w" sizes="(max-width: 589px) 100vw, 589px" />							</a>
+			<h3>
+				<a href="http://www.imdsx.cn:80/index.php/2017/12/10/located/">
+					密码保护：Appium定位方式总结				</a>
+			</h3>
+		</li>
+						<li>
+			<a href="http://www.imdsx.cn:80/index.php/2017/12/04/select/" class="thumbnails">
+									<img width="213" height="132" src="http://www.imdsx.cn:80/wp-content/uploads/2017/07/driver-e1501134127655.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />							</a>
+			<h3>
+				<a href="http://www.imdsx.cn:80/index.php/2017/12/04/select/">
+					密码保护：下拉框处理（select）				</a>
+			</h3>
+		</li>
+			  </ul>
+	</section>
+	<section class="widget widget_ui_posts"><h3 class="widget_tit">最新评论</h3>
+		<div class="cbl-comment">
+			<ul>
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/03/03/587/comment-page-1/#comment-76" title="在一无所有，就是你该努力的理由发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />点赞</a>
+				</li>
+			
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/08/23/http/comment-page-1/#comment-72" title="nock在跟大师兄学测试系列-HTTP协议与TCP协议发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted">nock</span><br />看来你和牛牛是真爱</a>
+				</li>
+			
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/03/03/587/comment-page-1/#comment-71" title="在一无所有，就是你该努力的理由发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />说得好，大师兄</a>
+				</li>
+			
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/03/03/587/comment-page-1/#comment-70" title="在一无所有，就是你该努力的理由发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />不想评论，只想点赞</a>
+				</li>
+			
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/03/03/587/comment-page-1/#comment-66" title="在一无所有，就是你该努力的理由发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />厉害</a>
+				</li>
+			
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/07/27/html4/comment-page-1/#comment-64" title="在HTML基础之JS发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />666</a>
+				</li>
+			
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/09/18/appium-api/comment-page-1/#comment-62" title="在密码保护：移动端自动化测试-AppiumApi接口详解发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />希望大师兄多些ios的例子</a>
+				</li>
+			
+				<li>
+					<a href="http://www.imdsx.cn:80/index.php/2017/12/10/located/comment-page-1/#comment-61" title="在密码保护：Appium定位方式总结发表的评论"><img data-src="https://cn.gravatar.com/avatar/?s=40&#038;d=retro&#038;r=g" width="40" height="40" alt="" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 photo avatar-default" /><span class="muted"></span><br />厉害哦！！</a>
+				</li>
+			</ul>		</div>
+	</section>
+	<section class="widget widget_archive"><h3 class="widget_tit">文章归档</h3>		<ul>
+			<li><a href='http://www.imdsx.cn:80/index.php/2018/11/'>2018年十一月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2018/08/'>2018年八月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2018/06/'>2018年六月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/12/'>2017年十二月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/11/'>2017年十一月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/09/'>2017年九月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/08/'>2017年八月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/07/'>2017年七月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/03/'>2017年三月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/02/'>2017年二月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2017/01/'>2017年一月</a></li>
+	<li><a href='http://www.imdsx.cn:80/index.php/2016/12/'>2016年十二月</a></li>
+		</ul>
+		</section><section class="widget widget_categories"><h3 class="widget_tit">分类目录</h3>		<ul>
+	<li class="cat-item cat-item-7"><a href="http://www.imdsx.cn:80/index.php/category/django/" >Django</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://www.imdsx.cn:80/index.php/category/java/" >Java</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.imdsx.cn:80/index.php/category/linxu/" >Linux</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.imdsx.cn:80/index.php/category/python/" >Python</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.imdsx.cn:80/index.php/category/selenium/" >Selenium</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://www.imdsx.cn:80/index.php/category/wsdsx/" >我是大师兄</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.imdsx.cn:80/index.php/category/uncategorized/" >未分类</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.imdsx.cn:80/index.php/category/withdsx/" >跟大师兄学测试</a>
+</li>
+		</ul>
+</section>		</div>	</div>			</div>
+<footer id="m-footer" class="foot">
+	<div class="container">
+		<div class="f-copy">
+			&copy;2018&nbsp;大师兄 .  &nbsp; 					</div>
+	</div>
+</footer>
+
+<div id="loading-wrap"><div class="loading"><div class="spinner"><div class="spinner-container container1"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container2"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div><div class="spinner-container container3"><div class="circle1"></div><div class="circle2"></div><div class="circle3"></div><div class="circle4"></div></div></div></div></div>
+
+<div id="back-to-top" class="red btip" data-scroll="body" style="display: block;" title="返回顶部" data-placement="top">
+	<svg id="point-up" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+		<path d="M23.588 17.637c-0.359-0.643-0.34-1.056-2.507-3.057 0.012-7.232-4.851-12.247-5.152-12.55 0-0.010 0-0.015 0-0.015s-0.003 0.003-0.007 0.007l-0.007-0.007c0 0 0 0.005 0 0.015-0.299 0.305-5.141 5.342-5.097 12.575-2.158 2.010-2.138 2.423-2.493 3.068-0.65 1.178-0.481 5.888 0.132 6.957 0.613 1.069 1.629 0.293 1.977-0.004 0.348-0.298 1.885-2.264 2.263-2.176 0 0 0.465-0.090 0.989 0.414 0.518 0.498 1.462 0.966 2.27 1.033 0 0.001 0 0.002-0 0.003 0.005-0.001 0.010-0.001 0.015-0.002 0.005 0 0.010 0.001 0.015 0.001 0-0.001-0-0.002 0-0.003 0.808-0.070 1.749-0.543 2.265-1.043 0.522-0.507 0.988-0.419 0.988-0.419 0.378-0.090 1.923 1.869 2.272 2.165 0.35 0.296 1.369 1.067 1.977-0.005 0.608-1.072 0.756-5.783 0.101-6.958v0 0zM15.95 14.86c-1.349 0.003-2.445-1.112-2.448-2.492-0.003-1.38 1.088-2.5 2.437-2.503 1.349-0.003 2.445 1.112 2.448 2.492 0.003 1.379-1.088 2.5-2.437 2.503v0 0zM17.76 24.876c-0.615 0.474-1.236 0.633-1.801 0.626-0.566 0.009-1.187-0.147-1.804-0.617-0.553-0.403-1.047-0.348-1.308 0.003-0.261 0.351-0.169 2.481 0.152 2.939 0.321 0.458 0.697-0.298 1.249-0.327 0.552-0.028 1.011 1.103 1.221 1.75 0.107 0.331 0.274 0.633 0.5 0.654 0.226-0.023 0.392-0.326 0.497-0.657 0.207-0.648 0.661-1.781 1.213-1.756 0.553 0.026 0.932 0.78 1.251 0.321 0.319-0.459 0.401-2.59 0.139-2.94-0.262-0.35-0.757-0.403-1.308 0.003v0 0z" fill="#"></path>
+	</svg>
+</div>
+<div id="sign" class="sign">
+    <div class="part loginPart">
+    <form id="login" action="http://www.imdsx.cn:80/wp-login.php" method="post" novalidate="novalidate">
+                <h3>登录<p class="status"></p></h3>
+        <p>
+            <label class="icon" for="username"><i class="fa fa-user"></i></label>
+            <input class="input-control" id="username" type="text" placeholder="请输入用户名" name="username" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="password"><i class="fa fa-lock"></i></label>
+            <input class="input-control" id="password" type="password" placeholder="请输入密码" name="password" required="" aria-required="true">
+        </p>
+        <p class="safe">
+            <label class="remembermetext" for="rememberme"><input name="rememberme" type="checkbox" checked="checked" id="rememberme" class="rememberme" value="forever">记住我的登录</label>
+            <a class="lost" href="http://www.imdsx.cn:80/wp-login.php?action=lostpassword">忘记密码 ?</a>
+        </p>
+        <p>
+            <input class="submit" type="submit" value="登录" name="submit">
+        </p>
+        <a class="close"><i class="fa fa-times"></i></a>
+        <input type="hidden" id="security" name="security" value="931575e3c7">
+		<input type="hidden" name="_wp_http_referer" value="/">
+	</form>
+        </div>
+    <div class="part registerPart">
+    <form id="register" action="http://www.imdsx.cn:80/wp-login.php?action=register" method="post" novalidate="novalidate">
+        <div id="login-active" class="switch"><i class="fa fa-toggle-off"></i>切换登录</div>
+        <h3>注册<p class="status"></p></h3>    
+        <p>
+            <label class="icon" for="user_name"><i class="fa fa-user"></i></label>
+            <input class="input-control" id="user_name" type="text" name="user_name" placeholder="输入英文用户名" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="user_email"><i class="fa fa-envelope"></i></label>
+            <input class="input-control" id="user_email" type="email" name="user_email" placeholder="输入常用邮箱" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="user_pass"><i class="fa fa-lock"></i></label>
+            <input class="input-control" id="user_pass" type="password" name="user_pass" placeholder="密码最小长度为6" required="" aria-required="true">
+        </p>
+        <p>
+            <label class="icon" for="user_pass2"><i class="fa fa-retweet"></i></label>
+            <input class="input-control" type="password" id="user_pass2" name="user_pass2" placeholder="再次输入密码" required="" aria-required="true">
+        </p>
+        <p>
+            <input class="submit" type="submit" value="注册" name="submit">
+        </p>
+        <a class="close"><i class="fa fa-times"></i></a>  
+        <input type="hidden" id="user_security" name="user_security" value="62562c5499"><input type="hidden" name="_wp_http_referer" value="/"> 
+    </form>
+    </div>
+    <div class="clear"></div>
+</div><div id="jquery_jplayer" class="jp-jplayer"></div>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/lazyload.min.js?ver=1.9.0'></script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/main.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/mousewheel.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/scrollbar.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/player.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var qq = {"is_mobile":"0","ajaxurl":"http:\/\/www.imdsx.cn:80\/wp-admin\/admin-ajax.php","url":"http:\/\/www.imdsx.cn:80\/","ajax_site_title":"\u5927\u5e08\u5144","postid":"1280"};
+var ajax_sign_object = {"redirecturl":"http:\/\/www.imdsx.cn:80","ajaxurl":"http:\/\/www.imdsx.cn:80\/wp-admin\/admin-ajax.php","loadingmessage":"\u6b63\u5728\u8bf7\u6c42\u4e2d\uff0c\u8bf7\u7a0d\u7b49..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/index.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-content/themes/QQ/js/ajax-comment.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://www.imdsx.cn:80/wp-includes/js/wp-embed.min.js?ver=4.7.11'></script>
+</body>
+</html>

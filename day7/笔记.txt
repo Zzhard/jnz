@@ -1,0 +1,40 @@
+回顾：
+1、模块是啥
+    1、标准模块
+        os、time、random、hashlib
+    2、第三方模块
+        1、pip install xxx
+            xlrd、xlwt、xlutils
+            pymysql
+        2、手动安装
+            .whl结尾
+            pip install c://user//nhy//desktop//xxxx.whl
+            .tag.gz
+                先解压然后进入解压之后的文件夹
+                python setup.py install
+
+今天要讲的
+    1、发邮件、写日志
+    2、操作redis
+        关系型数据库
+            数据库 表
+            sql来操作
+
+        非关系型数据库 nosql
+        redis、mongodb、memcache
+            没有表
+            没有sql语句
+            k - v
+            每秒能支持 30w次的读写
+            数据全部都是放在内存里面的
+
+    3、内置函数
+    4、导入模块
+        1、导入模块的顺序
+            1、先从当前目录下找这个模块
+            2、再去环境变量里面找
+        2、导入的模块的实质
+            就是把导入的这个python文件运行一次
+    5、怎么用python开发接口
+    
+

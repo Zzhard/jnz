@@ -1,0 +1,49 @@
+上周回顾：
+    上午：
+        jmeter压测
+        怎么设并发
+        jmeter分布式
+        jmeter没有图形化界面的时候，压测
+            jmeter命令
+            jmeter -n -t test.jmx -l res.jtl
+        断言：
+            校验结果的
+
+        Charles：
+            抓包
+
+    下午：
+        python
+
+    int str float
+    input
+    print
+    type
+    if xxx:
+        pass
+    elif xxxx=111:
+        pass
+    else:
+        xxxx
+
+    循环
+    重复的执行循环体里面的代码。
+    break   #立即结束循环
+    continue #跳出本次循环，继续进行下一次循环
+        while        for
+        count = 0
+        while count<3:
+            pass
+            count+=1
+            continue
+            print('test')
+    for i in range(2):
+        pass
+        count+=1
+        continue
+        print('test')
+
+
+
+今天学习的内容：
+    list、字典、字符串常用的方法、元组、文件的操作

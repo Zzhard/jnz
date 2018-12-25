@@ -1,0 +1,6 @@
+xlrd
+requests
+jsonpath
+xlutils
+nnlog
+yagmail

@@ -1,0 +1,93 @@
+上周回顾：
+    list、
+    l= []
+        增加 append insert
+        删除 pop remove  del a[0]
+        修改 l[0]=aa
+        l=[name1,name2,name3]
+        查：l[1]
+            l[::1]
+
+         l.count('xx')
+         l.index('')
+         l.reverse()
+    元组 list
+        tuple = ('a',)
+    字典
+        d = {
+            k:v,
+            k1:v1
+            name:xiaojun
+        }
+        users = {'xiaojum':'123456'}
+        name : xiaojun
+        增加
+            d['name'] = xiaojun2
+            d.setdefault('name3','wangcan')
+        修改：
+            d['name'] = xiaojun2
+        删除：
+            d.pop('k')
+            del d[k]
+        查询：
+            d['xiaojun']
+            d.get('name')
+        for k,v d.items():
+            print(k,v)
+        d.keys()
+        d.values()
+
+    字符串的常用方法
+        s='anc'
+        s.upper()
+        s.lower()
+        s.capitalize()
+        s.split(',')
+        s.strip('abc')
+        s.lstrip()
+        s.rstrip()
+        s.replace('old','new')
+        s.endswith('xxx.mp3')
+        s.startswith('186')
+        ','.join('sdfsdfds')
+        s.isdigits()
+        s.isalnum()
+        s.zfill(5)
+
+    读写文件
+        f = open('a.txt','a')
+        f.read()
+        f.write()
+        f.close()
+
+今天要学的
+    作业讲一下
+    字符串的方法补充完成
+    读写文件
+    集合
+    函数
+
+
+作业：
+    1、实现一个商品管理的程序。
+        #输出1，添加商品 2、删除商品 3、查看商品
+        添加商品：
+            商品的名称：xxx  商品如果已经存在的话，提示商品商品已经存在
+            商品的价格：xxxx 数量只能为大于0的整数
+            商品的数量：xxx，数量只能为大于0的整数
+        2、删除商品：
+            输入商品名称：
+                iphone 如果输入的商品名称不存在，要提示不存在
+        3、查看商品信息：
+             输入商品名称：
+                iphone：
+                    价格：xxx
+                    数量是：xxx
+                all：
+                    print出所有的商品信息
+
+
+
+
+
+

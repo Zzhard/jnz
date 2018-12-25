@@ -1,0 +1,65 @@
+上周回顾：
+    函数
+        a = 1
+        def my(xx,xx=None):
+            pass
+            global a
+            a = 2
+            return a,b,c
+        a,b,c = my()
+        a = my()
+        局部变量和全局变量
+        字典、list
+        递归
+        def my2(a):
+            my2(1)
+
+    集合
+        d=set()
+        d2=set([])
+        集合天生去重
+        d2.add(xxx)
+        d2.pop()
+        for l in d:
+            pass
+
+    模块
+       标准模块：python自带的
+       第三方：别人写好，你可以直接用的，但是得安装
+       自己的写的python文件
+
+       一个python文件就是一个模块
+
+常用的模块
+    os
+    time
+    hashlib
+
+    操作数据库
+    操作Excel
+
+    内置函数
+
+    安装第三方模块的方式：
+        1、pip install xxxx
+        2、.whl
+            pip install c:/user/niuhanyang/desktop/xxx.whl
+        3、.tar.gz
+            1、先解压
+            2、解压之后在命令行里面进入到这个目录下
+            3、执行python setup.py install
+
+    python3.5 -m pip insatll xxx
+
+    python2 -m pip insatll xxx
+
+    python3.6 -m pip insatll xxx
+
+
+
+
+
+下周：
+    web自动化相关的内容
+    pypi.org  pip源
+

@@ -1,0 +1,10 @@
+{
+  "iphonex": {
+    "count": 500,
+    "price": 2000
+  },
+  "mac": {
+    "count": 8,
+    "price": 8888
+  }
+}
