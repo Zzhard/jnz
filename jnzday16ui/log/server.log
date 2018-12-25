@@ -1,0 +1,6 @@
+[2018-12-15 11:19:39,066] [DEBUG] [HTMLTestRunner.py:_generate_report:750] []
+[2018-12-15 11:38:42,631] [DEBUG] [HTMLTestRunner.py:_generate_report:750] []
+[2018-12-15 11:41:06,574] [DEBUG] [HTMLTestRunner.py:_generate_report:750] [('test_a_login.jpg',)]
+[2018-12-15 17:14:01,749] [DEBUG] [HTMLTestRunner.py:_generate_report:750] [('test_a_login.jpg',)]
+[2018-12-15 17:16:22,223] [DEBUG] [HTMLTestRunner.py:_generate_report:750] []
+[2018-12-15 17:21:07,955] [DEBUG] [HTMLTestRunner.py:_generate_report:750] []
