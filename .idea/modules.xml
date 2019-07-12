@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/上课代码.iml" filepath="$PROJECT_DIR$/.idea/上课代码.iml" />
+      <module fileurl="file://D:/PyCharm/自学python/.idea/自学python.iml" filepath="D:/PyCharm/自学python/.idea/自学python.iml" />
     </modules>
   </component>
 </project>
